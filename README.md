@@ -3,32 +3,31 @@
 
 what is needed 
 
-React.js
+React.js - https://github.com/facebook/react  https://reactjs.org/
 
-Redux or flux
+Redux or flux -https://github.com/reduxjs/redux   https://redux.js.org/
 
-redux thunk
+redux thunk - https://github.com/reduxjs/redux-thunk
 
-Redux Saga
+Redux Saga -https://github.com/redux-saga/redux-saga
 
-howler.js
+howler.js -https://howlerjs.com/  https://github.com/goldfire/howler.js/
 
-webaudio api
+webaudio api -  is a webkit and dosent need an api key
 
-html5 audio
+html5 audio - https://www.w3schools.com/html/html5_audio.asp
 
-spotify api
+spotify api - added to .env https://developer.spotify.com/dashboard/applications/ef7c5e7c16bf4702a3c60bf78b3447d7
 
 Node.js
 
 Express
 
-RethinkDB like fire base
+RethinkDB - https://www.rethinkdb.com/  https://github.com/rethinkdb/rethinkdb
 
-whatwg-fetch
-
-
-webpack MODULE BUNDLER
+whatwg-fetch - https://www.npmjs.com/package/whatwg-fetch   https://github.com/whatwg/fetch
 
 
-maybe Django for scalability
+webpack MODULE BUNDLER - https://webpack.github.io/  https://webpack.js.org/
+
+
