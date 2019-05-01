@@ -25,6 +25,8 @@ Express
 
 RethinkDB like fire base
 
+whatwg-fetch
+
 
 webpack MODULE BUNDLER
 
