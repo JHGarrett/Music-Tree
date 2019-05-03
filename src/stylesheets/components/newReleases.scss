@@ -1,0 +1,38 @@
+.new-releases-component {
+  max-width: $container-large;
+  background-color: $gray-light;
+  min-height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 6px 1px rgba(99, 99, 99, 0.12);
+  padding: 20px;
+  padding-bottom: 52px;
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .new-releases-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    .new-releases-item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      cursor: pointer;
+      img {
+        width: 378px;
+        height: 378px;
+        transition: 0.3s all ease;
+        box-shadow: $box-shadow-primary;
+      }
+      &:hover img {
+        filter: invert(15%);
+      }
+    }
+  }
+}

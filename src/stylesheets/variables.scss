@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+//Colors
+$brand-primary: #001b23; //#270000; //#313131;
+$brand-secondary: #ff6b42; //#ff4d1c;
+$brand-third: #982f2f;
+
+//Gray scale
+$gray-light: #efefef;
+$gray-medium-light: #afafaf;
+$gray-medium: #676767;
+$gray-lightdark: #404040;
+$gray-dark: #282828;
+
+//Body
+$body-background-color: rgba(0, 27, 35, 0.149); //#dee4e1;
+$body-default-color: #333333;
+$body-default-font-familty: 'Open Sans', sans-serif;
+
+//Nav
+$nav-background-color: $brand-primary;
+$nav-font-color: #ffffff;
+$nav-height: 52px;
+
+// Containers
+$container-large: 1300px;
+
+// Box shadows
+$box-shadow-primary: 0px 2px 6px 0px rgba(0, 0, 0, 0.363);
+$box-shadow-large: 0px 2px 20px 0px rgba(0, 0, 0, 0.645);
+$box-shadow-small: 0px 2px 4px 0px rgba(0, 0, 0, 0.23);
+
+// Media queries
+$break-mobile: 850px;

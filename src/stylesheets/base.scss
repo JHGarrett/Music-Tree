@@ -1,0 +1,139 @@
+body {
+  color: $body-default-color;
+  font-family: $body-default-font-familty;
+}
+
+html {
+  font-size: 14px;
+  overflow-y: auto;
+
+  background: linear-gradient(rgba(255, 107, 66, 0.42), rgba(0, 0, 0, 0.9) 75%),
+    url('https://images.pexels.com/photos/167605/pexels-photo-167605.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.app {
+  background: linear-gradient(
+    transparentize($color: #d1dede, $amount: 0.2),
+    transparentize($color: #b5bec6, $amount: 0.2) 55%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  transition: 0.35s all cubic-bezier(0.09, 0.97, 0.34, 0.63) !important;
+  cursor: pointer;
+}
+
+main,
+li {
+  display: block;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.linear-gradient {
+  background: linear-gradient(transparent, $brand-primary);
+}
+
+// alerts
+.s-alert-box {
+  box-shadow: $box-shadow-large;
+  min-width: 200px;
+}
+.s-alert-success {
+  background-color: rgba(71, 150, 94, 0.966);
+}
+
+.hidden {
+  opacity: 0 !important;
+}
+
+.go-back-button {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  border-radius: 50px;
+  border: 0;
+  left: 15px;
+  top: 67px;
+  background: $gray-lightdark;
+  color: $gray-light;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: $break-mobile) {
+    left: 5px;
+    top: 5px;
+  }
+}
+
+.columns {
+  margin: 0 !important;
+}
+
+//nedan är en klass för att göra scrollbar invisible i webkit-browsers som chrome
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+// Remove google chromes yellow autofll
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 9999s !important;
+  -webkit-transition: color 9999s ease-out, background-color 9999s ease-out !important;
+}
+
+.effect1 {
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.233);
+  -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.233);
+  box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.233);
+}
+
+.effect8 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before,
+.effect8:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 14px 0px rgba(0, 0, 0, 0.7);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.effect8:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}

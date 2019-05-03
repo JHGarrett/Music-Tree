@@ -1,0 +1,121 @@
+.search-component {
+  margin-bottom: 52px;
+  width: $container-large;
+  background-color: $gray-light;
+  min-height: calc(100vh - #{$nav-height});
+  margin: 0 auto;
+  box-shadow: 0px 0px 6px 1px rgba(99, 99, 99, 0.12);
+  padding-bottom: $nav-height;
+  .search-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .title {
+      margin-bottom: 0 !important;
+      margin-right: 10px;
+      font-size: 1.6rem;
+    }
+    .subtitle {
+      margin-top: 0 !important;
+      font-size: 1.4rem;
+      &:first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+  .search-data-wrapper {
+    display: flex;
+
+    flex-direction: row;
+    h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+      padding-bottom: 15px;
+      padding-top: 10px;
+    }
+    .searched-artists {
+      width: 28.3%;
+      padding: 10px;
+      .artist-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .artist-result {
+          margin-bottom: 15px;
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            box-shadow: $box-shadow-primary;
+          }
+          p {
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.9rem;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .searched-tracks {
+      width: 43.3%;
+      padding-top: 10px;
+      .track-list {
+        border-right: 1px solid #cfcfcf;
+        border-left: 1px solid #cfcfcf;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    .searched-playlists {
+      width: 28.3%;
+      padding: 10px;
+      .playlist-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .playlist-result {
+          margin-bottom: 15px;
+          width: 33%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            box-shadow: $box-shadow-primary;
+          }
+          p {
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 0.9rem;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .time-counter {
+    left: 50px !important;
+  }
+}

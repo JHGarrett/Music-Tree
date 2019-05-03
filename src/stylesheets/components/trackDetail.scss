@@ -1,0 +1,203 @@
+$artist-dimension-desktop: 36vh;
+$artist-dimension-mobile: 15vh;
+.track-detail-component {
+  max-width: $container-large;
+  background-color: $gray-light;
+  min-height: calc(100vh - #{$nav-height});
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 6px 1px rgba(99, 99, 99, 0.12);
+  padding: 20px 0px;
+  padding-bottom: 52px;
+  @media screen and (max-width: $break-mobile) {
+    font-size: 0.9rem;
+    padding-top: 0px;
+  }
+  .track-header {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    background: $brand-primary;
+    margin-bottom: 5%;
+    @media screen and (max-width: $break-mobile) {
+      position: relative;
+      height: 45vh;
+    }
+    .track-art-wrapper {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-left: 2vh;
+      width: $artist-dimension-desktop;
+      height: $artist-dimension-desktop;
+      box-shadow: $box-shadow-primary;
+      @media screen and (max-width: $break-mobile) {
+        width: $artist-dimension-mobile;
+        height: $artist-dimension-mobile;
+        align-self: flex-start;
+        margin-top: 15px;
+      }
+      .track-art {
+        width: $artist-dimension-desktop;
+        height: $artist-dimension-desktop;
+        @media screen and (max-width: $break-mobile) {
+          width: $artist-dimension-mobile;
+          height: $artist-dimension-mobile;
+        }
+      }
+    }
+    .track-info-details {
+      width: calc(100% - #{$artist-dimension-desktop});
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      @media screen and (max-width: $break-mobile) {
+        width: calc(100% - #{$artist-dimension-mobile});
+        justify-content: flex-start;
+        padding-left: 15px;
+      }
+      .track-names {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 2.2rem;
+          letter-spacing: 1px;
+          color: white;
+          @media screen and (max-width: $break-mobile) {
+            font-size: 1.4rem;
+            padding-bottom: 10px;
+          }
+        }
+        .track-artists {
+          margin-top: 10px;
+          display: flex;
+          h2 {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            color: $gray-medium-light;
+            line-height: 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            &:first-child {
+              margin-left: 0px;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+            @media screen and (max-width: $break-mobile) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      .track-character {
+        margin-bottom: 20px;
+        p {
+          font-size: 1.2rem;
+          color: $gray-medium-light;
+          @media screen and (max-width: $break-mobile) {
+            font-size: 1rem;
+          }
+          &:first-child {
+            margin-bottom: 10px;
+          }
+          span {
+            background-color: $brand-secondary;
+            color: white;
+            padding: 1px 10px;
+            border-radius: 50px;
+            margin: 3px;
+            box-shadow: $box-shadow-small;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            @media screen and (max-width: $break-mobile) {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+      .track-measurements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20%;
+        margin-bottom: 20px;
+        @media screen and (max-width: $break-mobile) {
+          padding-right: 0;
+          margin-bottom: 5px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          overflow-x: hidden;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          p {
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: $gray-medium-light;
+            @media screen and (max-width: $break-mobile) {
+              font-size: 0.6rem;
+              margin-bottom: 0px;
+            }
+          }
+          .pieChart {
+            .innerText {
+              text {
+                font-size: 3.5rem;
+              }
+            }
+            @media screen and (max-width: $break-mobile) {
+              width: 50px;
+            }
+          }
+          #graph {
+            stroke-dasharray: 630px;
+            stroke-dashoffset: 630px;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+  }
+  .track-player-view {
+    .track-player-options {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      width: 45%;
+      justify-content: space-between;
+      margin-bottom: 3%;
+      @media screen and (max-width: $break-mobile) {
+        width: 100%;
+      }
+      .button {
+        width: 150px;
+        height: 40px;
+        font-size: 0.8rem;
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 1px solid black;
+        letter-spacing: 2px;
+        border-radius: 0px;
+        &:hover {
+          background-color: $gray-light;
+          color: $gray-lightdark;
+        }
+      }
+    }
+  }
+}

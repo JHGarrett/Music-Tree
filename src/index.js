@@ -1,12 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {
+  BrowserRouter,
+  HashRouter,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom'
+import { Provider } from 'react-redux'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import './stylesheets/main.scss'
+import store from './store'
+import Routes from './routes'
+import { renderRoutes } from 'react-router-config'
+
+if (process.env.NODE_ENV !== 'production') {
+  console.log('Looks like we are in development mode!')
+}
+
+if (module.hot) {
+  module.hot.accept()
+}
+
+const Root = () => {
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <div>{renderRoutes(Routes)}</div>
+      </BrowserRouter>
+    </Provider>
+  )
+}
+
+ReactDOM.hydrate(<Root />, document.querySelector('#root'))
