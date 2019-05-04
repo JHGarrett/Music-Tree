@@ -2,7 +2,7 @@
   "name": "music-tree",
   "version": "1.0.0",
   "description": "A Spotify clone to show users new songs or artist based on their Spotify history.",
-  "main": "server.js",
+  "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/server.js",
