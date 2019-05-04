@@ -1,6 +1,1 @@
-/node_modules/**
-.DS_STORE
-./idea
-/public/*
-/build/*
-/dist/*
+node_modules
