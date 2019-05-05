@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: $bg-grey;
+  min-width: 320px;
+  font-family: 'ubuntu', sans-serif;
+}
+
+.button {
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transition: 0.3s;
+  }
+}
+
+/////////////////////
+// Generic Classes //
+.namered {
+  @include themify($themes) {
+    color: themed('hoverColor');
+  }
+}
+.bold {
+  font-style: normal;
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.link {
+  @include themify($themes) {
+    color: themed('hoverColor');
+
+    &:hover {
+      color: themed('linkHoverColor');
+    }
+  }
+
+  // color: $accent-red;
+  transition: color .5s ease-out;
+  -webkit-transition: color .5s ease-out;
+
+  &:hover {
+    // color: darken($accent-red, 20%);
+    transition: color .5s ease-in;
+    -webkit-transition: color .5s ease-in;
+  }
+}
+
+
+//-----------------  Error Handling popup notification  -----------//
+.error-popover {
+  display: block;
+  margin-top: -90px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: $accent-red;
+  opacity: 1;
+  border: 0;
+  border-radius: 5px;
+  padding: 0;
+  z-index: 1000;
+  box-shadow: none;
+  text-align: center;
+  max-width: 200px;
+  line-height: 1.5;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  word-wrap: break-word;
+  transition: opacity .15s linear;
+}
+
+.popover-arrow {
+  left: 80px;
+  bottom: -90px;
+  border: 0;
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 5px;
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $accent-red;
+  }
+}
+
+
+.popover-header {
+  text-align: center;
+  border-bottom: 0 none;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #66615b;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: -10px;
+}
+
+.popover-body {
+  padding: 15px;
+  text-align: center;
+}
+
+//-----------------  End of Error Handling popup notification  -----------//

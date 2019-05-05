@@ -1,0 +1,76 @@
+.landing-page-title {
+  justify-content: top;
+  margin-top: 2%;
+}
+.searchbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    margin-bottom: 10vh;
+  }
+}
+.landing-searchbar {
+  @include themify($themes) {
+    border: none;
+    background: themed('backgroundColor');
+  }
+  outline: none;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+}
+.landing-search {
+  @include themify($themes) {
+    color: themed('hoverColor');
+    border: none;
+    border-bottom: 1px solid themed('input');
+    background: themed('backgroundColor');
+  }
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  text-indent: 12px;
+  outline: none;
+  border-radius: 0;
+}
+.landing-search-icon {
+  @include themify($themes) {
+    color: themed('textColor');
+    background: themed('backgroundColor');
+  }
+
+  font-size: 1.5em;
+  padding-left: .5em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    @include themify($themes) {
+      color: themed('hoverColor');
+    }
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1360px) {
+
+  .searchbar-wrapper {
+  width: 75%;
+  }
+}
+@media screen and (max-width: 949px) {
+  .searchbar-wrapper {
+  width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .landing-page {
+    margin-left: 0;
+  }
+}
