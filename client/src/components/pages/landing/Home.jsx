@@ -10,6 +10,7 @@ class Home extends Component {
   }
 
 render(){
+  console.log('from Home', this.props);
   return(
     <div className={this.props.launch ? "page-wrapper nodash" : "page-wrapper"}>
       <div className="landing-page-title">
