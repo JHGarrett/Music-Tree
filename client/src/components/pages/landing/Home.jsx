@@ -17,10 +17,15 @@ render(){
       </div>
       <div className="searchbar-wrapper">
       <h2>Type in a song or Artist</h2>
-      <form className="landing-searchbar" onSubmit={}
+      <form className="landing-searchbar" onSubmit={this.handleSearchInput.bind(this)}>
+            <button type="submit" className="landing-search-icon"><i className="fas fa-seach"></i></button>
+            <input className="landing-search" name="search"/>
+              </form>
       </div>
     </div>
   )
 }
 
 }
+
+export default withRouter(Home);
