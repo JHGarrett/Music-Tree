@@ -2,10 +2,18 @@
   "name": "music-tree",
   "version": "1.0.0",
   "description": "Allows user to search the YouTube API for music.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "serve": "nodemon server/server.js & webpack -w",
+    "dev": "webpack-dev-server",
+    "watch": "nodemon server/server.js",
+    "build:dev": "webpack",
+    "build:prod": "NODE_ENV=production webpack -p",
+    "heroku-postbuild": "npm run build:prod"
   },
+  "proxy": "http://localhost:8000/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JHGarrett/Music-Tree.git"
