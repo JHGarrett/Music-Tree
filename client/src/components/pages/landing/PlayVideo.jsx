@@ -28,10 +28,26 @@ const PlayVideo = (props) => {
         <div>
           <div>{title}</div>
           <div>{description}</div>
-          {props.auth.loggedIn &&}
+          {props.auth.loggedIn && 
+            <div>
+              <button className="save-video-button" onClick={() => props.dispatch(addLikedVideo(props.auth.creds._id, props.selectedVideo))}><i className="fas fa-heart"></i></button>
+              <button className="save-video-button"><i className="fas fa-list"></i><i className="fas fa-plus"></i></button>  
+            </div>  
+            
+            }
         </div>
       </div>
-    )
+    );
 
+  } else {
+    return null;
   }
-}
+};
+
+const mapStateToProps = (state) => {
+  return {
+    auth: state.auth
+  };
+};
+
+export default connect(mapStateToProps)(PlayVideo);
