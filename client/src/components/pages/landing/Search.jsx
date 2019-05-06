@@ -33,7 +33,22 @@ export default class Search extends Component {
   }
 
   render() {
-    
+    console.log('from search: ', this.prpos);
+    const { videos, selectedVideo } = this.props.stateData;
+
+    return (
+      <div className="page-wrapper">
+      
+        <div className="post-landing-searchbar-wrapper">
+          <form className="landing-searchbar" onSubmit={this.handleSearchInput.bind(this)}>
+            <button type="submit" className="landing-serch-icon button"><i className="fas fa-search"></i></button>
+            <input className="landing-search" name="search" defaultValue={this.props.userId.match.params.id}/>
+          </form>
+        </div>
+        
+      
+      </div>
+    )
   }
 
   }
