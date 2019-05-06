@@ -20,5 +20,20 @@ export default class Search extends Component {
     this.props.userId.history.push(`/search/${search}`);
   }
 
+  saveSelectedVideo(video) {
+    console.log('youtube video details: ', video);
+    const selectedVideo = {
+      title: video.snippet.title,
+      description: video.snippet.description,
+      url: video.id.videoId,
+      thumbnail: video.snippet.thumbnails.high.url
+    }
+
+    this.props.handleSelectedVideo(selectedVideo);
+  }
+
+  render() {
+    
+  }
 
   }
