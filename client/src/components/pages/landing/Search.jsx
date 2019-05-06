@@ -45,8 +45,20 @@ export default class Search extends Component {
             <input className="landing-search" name="search" defaultValue={this.props.userId.match.params.id}/>
           </form>
         </div>
-        
-      
+
+      <PlayVideo
+        selectedVideo={selectedVideo}
+        handleLikedVideo={this.props.handleLikedVideo}
+        user={this.props.stateData.user}
+        />
+
+      <div className="post-landing-video-pull">
+      {videos.map((video, index) => (
+        <div key={index} className="individual-video-space" onClick={() => this.saveSelectedVideo(video)}>
+        <img className="post-search-video" src={video.}
+      ))}
+      </div>
+
       </div>
     )
   }
