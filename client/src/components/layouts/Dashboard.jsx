@@ -30,3 +30,11 @@ class DashBoard extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    auth: state.auth
+  };
+};
+
+export default connenct(mapStateToProps)(DashBoard);
