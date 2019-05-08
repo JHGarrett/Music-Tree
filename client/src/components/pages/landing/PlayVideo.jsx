@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { S_IFLNK } from "constants";
+
+import { addLikedVideo } from "../../../actions/userVideos";
 
 const PlayVideo = props => {
-  console.log("playvideo props: ", props);
+  console.log('this is playvideo props: ', props);
   window.scrollTo(0, 0);
 
   if (props.location) {
@@ -44,8 +45,7 @@ const PlayVideo = props => {
                 <i className="fas fa-heart" />
               </button>
               <button className="save-video-button">
-                <i className="fas fa-list" />
-                <i className="fas fa-plus" />
+                <i className="fas fa-list" /> <i className="fas fa-plus" />
               </button>
             </div>
           )}

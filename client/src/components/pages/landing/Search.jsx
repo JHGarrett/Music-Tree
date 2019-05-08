@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import PlayVideo from "./PlayVideo";
+import PlayVideo from "./PlayVideo.jsx";
 
 export default class Search extends Component {
   componentDidMount() {
