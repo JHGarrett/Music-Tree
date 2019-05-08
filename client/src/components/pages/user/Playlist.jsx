@@ -160,3 +160,5 @@ export default class Playlist extends Component {
 //     </div>
 //   </div>
 // );
+export default withRouter(connect(mapStateToProps)(Playlist));
+         
