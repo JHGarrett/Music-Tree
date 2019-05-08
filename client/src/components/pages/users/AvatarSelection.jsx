@@ -49,99 +49,122 @@ class AvatarSelection extends Component {
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
-            src=""
+            src="https://image.flaticon.com/icons/svg/145/145842.svg"
 />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145843.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145847.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145848.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145849.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145850.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145846.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src='https://image.flaticon.com/icons/svg/145/145844.svg'
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145845.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145867.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145852.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145859.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145862.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145866.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/145/145864.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://www.flaticon.com/premium-icon/icons/svg/145/145857.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/265/265674.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/1651/1651586.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/167/167750.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/1651/1651607.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/201/201565.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/201/201612.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/201/201608.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
+            src="https://image.flaticon.com/icons/svg/1046/1046374.svg"
           />
         </div>
       </div>
