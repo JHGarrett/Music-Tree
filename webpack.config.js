@@ -6,6 +6,7 @@ const cssExtract = new ExtractTextPlugin("styles.css");
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
 module.exports = {
+  target: "node",
   entry: {
     entry: ["babel-polyfill", "react-hot-loader/patch", "./client/index.jsx"],
     vendor: ["react", "react-dom", "react-redux", "react-router"]
