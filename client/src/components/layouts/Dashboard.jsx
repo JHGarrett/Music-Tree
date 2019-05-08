@@ -1,30 +1,23 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { connenct } from "react-redux";
+import { connect } from "react-redux";
 
-import DashTop from "./DashbordCompnents/Dashtop.jsx";
+import DashTop from "./DashboardComponents/DashTop.jsx";
 import DashTopUser from "./DashboardComponents/DashTopUser.jsx";
 import DashBottom from "./DashboardComponents/DashBottom.jsx";
 
-class DashBoard extends Component {
+class Dashboard extends Component {
   componentDidMount() {
-    // get json data
-    let session = JSON.parse(sessionStorage.getItem("session"));
+    let session = JSON.parse(sessionStorage.getItem("session")); // get JSON session data
     this.props.auth.loggedIn ? this.props.handleShowDash() : null;
   }
 
   render() {
-    console.log("from dashboard: ", this.props);
+    // console.log('from dashboard: ', this.props);
     const { loggedIn, creds } = this.props.auth;
 
     return (
-      <div
-        className={
-          this.UNSAFE_componentWillMount.props.launch
-            ? "hide-dash"
-            : "dashboard"
-        }
-      >
+      <div className={this.props.launch ? "hide-dash" : "dashboard"}>
         {loggedIn ? (
           <DashTopUser retrieveSavedVideos={this.props.retrieveSavedVideos} />
         ) : (
@@ -42,4 +35,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connenct(mapStateToProps)(DashBoard);
+export default connect(mapStateToProps)(Dashboard);
