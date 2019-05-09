@@ -1,0 +1,268 @@
+.hide-dash {
+  display: none;
+}
+
+.dashboard {
+  @include themify($themes) {
+    color: themed('dashText');
+    background: themed('dashBackground');
+    box-shadow: 0px 3px 5px 1px themed('lightShadow');
+    z-index: 5;
+  }
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "dashtop"
+    "dashbottom";
+  align-content: space-between;
+  width: 20vw;
+  height: calc(100vh - 75px);
+  position: fixed;
+  padding: 1em;
+  
+}
+
+///////////////////////
+// Dashboard No User //
+.dashboard-top {
+  grid-area: dashtop;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "exp"
+    "sign"
+    "list";
+}
+.dash-header {
+  grid-area: exp;
+  text-align: center;
+}
+.sign-up {
+  grid-area: sign;
+}
+.benefits-list {
+  grid-area: list;
+  list-style-type: none;
+  padding-left: 5%;
+  font-style: italic;
+}
+.dashboard__link {
+  @include themify($themes) {
+    color: themed('hoverColor');
+  }
+
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  transition: color .5s ease-out;
+  -webkit-transition: color .5s ease-out;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.dashboard__link:hover {
+  @include themify($themes) {
+    color: themed('linkHoverColor');
+  }
+
+  transition: color .5s ease-out;
+  -webkit-transition: color .5s ease-out;
+}
+
+////////////////////////////
+// Dash w/ user logged in //
+////////////////////////////
+.dashboard-user {
+  a {
+    text-decoration: none; // points to username link
+  }
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "avatar"
+    "username"
+    "links"
+    "theme";
+}
+/////////////////////////
+// Avatar and Username //
+.avatar {
+  grid-area: avatar;
+  width: 100%;
+}
+.user-name {
+  @include themify($themes) {
+    color: themed('dashText');
+  }
+  grid-area: username;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+////////////////////////////////
+// Playlists and Liked Videos //
+.user-links {
+  grid-area: links;
+  display: flex;
+}
+.user-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+.user-links li {
+  padding-top: 10px;
+}
+
+///////////////////
+// Theme Chooser //
+.dash-theme {
+  grid-area: theme;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "themetitle choice choice";
+  align-items: center;
+}
+.theme-title {
+  grid-area: themetitle;
+}
+.theme-changer {
+  @include themify($themes) {
+    color: themed('hoverColor');
+    border: 1px solid themed('dashText');
+
+    @media (max-width: 768px) {
+      border: 1px solid themed('themeSelect');
+    }
+  }
+
+  grid-area: choice;
+  display: flex;
+  height: 50%;
+  font-size: 1em;
+  outline: none;
+  background: inherit;
+}
+
+////////////////////////////
+// Dash Bottom aka Footer //
+.dashboard-bottom {
+  grid-area: dashbottom;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "social"
+    "footer";
+}
+
+//////////////////
+// Social Media //
+.dashboard-social-media {
+  grid-area: social;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-items: center;
+}
+.social-media {
+  @include themify($themes) {
+    color: themed('dashText');
+    border: 2px solid themed('dashText');
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 15%;
+  transition: all .25s ease-out;
+  -webkit-transition: all .25s ease-out;
+}
+.social-media:hover {
+  @include themify($themes) {
+    color: themed('linkHoverColor');
+    border-color: themed('linkHoverColor');
+  }
+
+  background-color: $off-white;
+  border-radius: 50%;
+  position: relative;
+  transition: all .25s ease-out;
+  -webkit-transition: all .25s ease-out;
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+}
+
+////////////////////
+// Footer Credits //
+.dashboard-footer {
+  grid-area: footer;
+  display: block;
+  text-align: center;
+}
+
+
+// =======================================
+// ========= TABLET/MOBILE ===============
+// =======================================
+
+///////////////////////////////////
+// Share and Theme become 2 rows //
+@media screen and (max-width: 1100px) {
+.dashboard-share {
+  grid-template-rows: 35px auto;
+  grid-template-areas:
+  "sharetitle . ."
+  "sharelinks sharelinks sharelinks";
+}
+  .dash-theme {
+  grid-template-rows: 35px auto;
+  grid-template-areas:
+  "themetitle . ."
+  "choice choice choice";
+  }
+  .theme-changer {
+  height: 30px;
+}
+}
+////////////////////////////////////////
+// Social media buttons become 2 rows //
+
+@media screen and (max-width: 950px) {
+
+  .dashboard-social-media {
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-media {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 40px;
+  }
+
+}
+
+///////////////////////////////////////
+// not visible in mobile/tablet view //
+@media screen and (max-width: 768px) {
+
+  .dashboard {
+    display: none
+  }
+  .dashboard-bottom {
+    display: flex;
+  }
+}
+
+///////////////////////////////////////
+// not visible in mobile/tablet view //
+@media screen and (max-height: 850px) {
+  .dashboard {
+    position: fixed;
+  }
+}
