@@ -33,7 +33,7 @@ export const fetchUser = (id, history) => {
   return async dispatch => {
     const res = await axios.get("/routes/user/${id}");
     if (typeof res.data === "object") {
-      dispatch({ type: "FETCH_USER", payload: res.data });
+      dispatch({ type: FETCH_USER, payload: res.data });
       sessionStorage.setItem("session", JSON.stringify(res.data));
     } else {
       // error validating. need to let user know.
@@ -61,7 +61,7 @@ export const signupUser = (creds, history) => {
 export const logoutUser = () => {
   return dispatch => {
     axios.get("routes/logout");
-    dispatch({ type: "LOGOUT_USER" });
+    dispatch({ type: LOGOUT_USER });
     // remove them from session storage
     sessionStorage.removeItem("session");
     // remove thier videos from session storage
@@ -77,7 +77,7 @@ export const logoutUser = () => {
 export const editUser = newCreds => {
   return async dispatch => {
     const res = await axios.get("/routes/user/${newCreds._id}");
-    dispatch({ type: "UPDATE_USER", payload: res.data });
+    dispatch({ type: UPDATE_USER, payload: res.data });
     sessionStorage.setItem("session", JSON.stringify(res.data));
   };
 };
@@ -94,7 +94,7 @@ export const deleteUser = (id, history) => {
       sessionStorage.removeItem("session");
       // remove videos from session storage
       sessionStorage.removeItem("videos");
-      dispatch({ type: "DELETE_USER" });
+      dispatch({ type: DELETE_USER });
       history.push("/");
       // refresh the page
       window.location.reload();
@@ -104,7 +104,7 @@ export const deleteUser = (id, history) => {
 
 export function authError(error) {
   return {
-    type: "AUTH_ERROR",
+    type: AUTH_ERROR,
     payload: error
   };
 }
