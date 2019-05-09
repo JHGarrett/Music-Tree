@@ -5,15 +5,12 @@ import { createLogger } from "redux-logger"; // must be LAST middleware in chain
 
 const loggerMiddleware = createLogger();
 
-
 // create store for redux
 
-
 // apply redux thunk- will return functions instead of actions
-
 
 // apply redux logger-- will show errors in the log
 
 export const store = createStore(RootReducer, applyMiddleware(thunkMiddleware));
 
-loggerMiddleware
+loggerMiddleware;
