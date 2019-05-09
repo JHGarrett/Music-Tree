@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default class Playlist extends Component {
   render() {
     return (
       <div className="page-wrapper">
         <h1>Still in the Works!</h1>
-        <Link to="/" className="link">Go to Homepage</Link>
+        <Link to="/" className="link">
+          Go to Homepage
+        </Link>
       </div>
-    )
+    );
   }
 }
 
@@ -161,4 +163,3 @@ export default class Playlist extends Component {
 //   </div>
 // );
 // export default withRouter(connect(mapStateToProps)(Playlist));
-         

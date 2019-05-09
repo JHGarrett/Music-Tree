@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { addLikedVideo } from "../../../actions/userVideos";
 
 const PlayVideo = props => {
-  console.log('this is playvideo props: ', props);
+  console.log("this is playvideo props: ", props);
   window.scrollTo(0, 0);
 
   if (props.location) {

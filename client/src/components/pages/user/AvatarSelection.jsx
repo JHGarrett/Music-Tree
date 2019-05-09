@@ -50,7 +50,7 @@ class AvatarSelection extends Component {
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
             src="https://image.flaticon.com/icons/svg/145/145842.svg"
-/>
+          />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
@@ -84,7 +84,7 @@ class AvatarSelection extends Component {
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
-            src='https://image.flaticon.com/icons/svg/145/145844.svg'
+            src="https://image.flaticon.com/icons/svg/145/145844.svg"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
