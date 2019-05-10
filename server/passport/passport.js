@@ -17,6 +17,32 @@ module.exports = (passport) => {
       done(null, user);
     });
   });
+
+   // Local Signup Config
+  passport.use('local-signup', new LocalStrategy({
+    usernameField : 'username',
+    passwordField : 'password',
+    passReqToCallback : true 
+  }, async (req, username, password, done) => {
+    console.log('passed in req: ', username, password);
+    try {
+      let user = await User.findOne({ username: username });
+        if (user) { 
+          return done(null, false); // Username already taken
+        } else {
+          let newUser = new User();
+          newUser.username = username;
+          newUser.password = newUser.generateHash(password);
+          newUser = await newUser.save();
+          console.log('new user created: ', newUser);  
+          return done(null, newUser);  
+        }
+    } catch (err) {
+      return done(err);
+    }
+  }));
+
+
    // Local Login Config
   passport.use('local-login', new LocalStrategy({
     usernameField : 'username',
@@ -37,3 +63,5 @@ module.exports = (passport) => {
       return done(err);
     }
   }));
+
+  
