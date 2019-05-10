@@ -63,3 +63,26 @@ $themes: (
     themeSelect: lighten($accent-dark-blue, 35%),
     formLabel: $accent-purple,
   ),
+  good-vibes: (
+    backgroundColor: $gv-blue,
+    textColor: darken($gv-purple, 5%),
+    dashText: darken($gv-blue, 10%),
+    textColorOpposite: $off-white,
+    hoverColor: $gv-dark-blue,
+    linkHoverColor: darken($gv-dark-blue, 20%),
+    dashBackground: $gv-violet,
+    aboutContainerBackground: $gv-teal,
+    teamMember: $gv-dark-blue,
+    teamMemberCircle: $off-black,
+    shadow: $gv-dark-blue,
+    lightShadow: $gv-dark-blue,
+    teamMemberText: $gv-teal,
+    input: darken($gv-dark-blue, 10%),
+    savedVidBackground: $gv-violet,
+    navBarBackground: lighten($gv-violet, 10%),
+    navBarIcon: $gv-purple,
+    themeSelect: $gv-blue,
+    formLabel: darken($gv-dark-blue, 10%),
+  )
+);
+
