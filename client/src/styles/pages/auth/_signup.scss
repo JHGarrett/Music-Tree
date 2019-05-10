@@ -36,3 +36,60 @@
     background: darken(#405993, 5%);
   }
 }
+
+.auth-icon {
+  font-size: 2em;
+  padding: 0 0.5em;
+}
+
+.divider {
+  @include themify($themes) {
+    border-top: 1px solid darken(themed('backgroundColor'), 10%);
+  }
+
+  width: 100%;
+  margin: 1em 0;
+  // border-top: 1px solid darken($bg-grey, 10%);
+  text-align: center;
+  display: block;
+  line-height: 1px;
+  position: relative;
+}
+
+.divider-title {
+  background: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0 1.5em;
+  text-transform: uppercase;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form__input {
+  @include themify($themes) {
+    color: themed('textColor');
+    border-bottom: 1px solid themed('lightShadow');
+  }
+  
+  border-radius: 0;
+  background-color: transparent;
+  padding: .5em;
+  margin: 0.5em;
+  width: 400px;
+  outline: none;
+  border: none;
+  font-family: 'ubuntu', sans-serif;
+  font-size: 1.2em;
+
+  &:focus {
+    border-bottom: 1px solid $accent-blue;
+  }
+}
+
