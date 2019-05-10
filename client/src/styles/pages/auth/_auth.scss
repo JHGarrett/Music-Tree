@@ -93,3 +93,28 @@
   }
 }
 
+.auth-submit {
+  font-family: 'ubuntu', sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 5px;
+  width: 200px;
+  color: white;
+  background-color: $accent-blue;
+  border: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: white;
+    background-color: darken($accent-blue, 5%);
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth-buttons-wrapper {
+    flex-direction: column;
+  }
+  .auth-form__input {
+    width: 200px;
+  }
+}
