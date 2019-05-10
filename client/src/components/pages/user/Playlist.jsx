@@ -15,7 +15,7 @@ export default class Playlist extends Component {
   }
 }
 
-// Temporarily removed for MVP since it's unfinished
+// have to remove this for now. will try to have it finished for the demo
 // return (
 //   <div className="page-wrapper">
 //     <h1>Your Playlists</h1>
