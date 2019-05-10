@@ -1,0 +1,30 @@
+.auth-card {
+  padding: 2.5em;
+  background: white;
+  box-shadow: 0px 0px 10px 1px #cacaca;
+}
+
+.auth-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-button, .facebook-button {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  padding: .5em 1em .5em 0;
+  border: none;
+  width: 200px;
+}
+
+.google-button {
+  background: #CD5542;
+
+  &:hover {
+    background: darken(#CD5542, 5%);
+  }
+}
