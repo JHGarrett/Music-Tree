@@ -21,7 +21,7 @@ const playlistSchema = new mongoose.Schema({
 
 playlistSchema.virtual("videosCount").get(function() {
   //keep the function, don't refactor to an arrow function here
-  return this.videos.lenght;
+  return this.videos.length;
 });
 
 module.exports = mongoose.model("Playlist", playlistSchema);
