@@ -1,7 +1,7 @@
 // this is the bottom section of the info dashboard. need to list my info and add social media buttons for future use.
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-
+// media links on the bottom of the dash
 export default class DashBottom extends Component {
   render() {
     return (

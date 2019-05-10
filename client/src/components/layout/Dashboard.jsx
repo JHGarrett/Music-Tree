@@ -6,6 +6,7 @@ import DashTop from "./DashboardComponents/DashTop.jsx";
 import DashTopUser from "./DashboardComponents/DashTopUser.jsx";
 import DashBottom from "./DashboardComponents/DashBottom.jsx";
 
+// this is the dashboard for the user to display dashtop and bottom if logged in
 class Dashboard extends Component {
   componentDidMount() {
     let session = JSON.parse(sessionStorage.getItem("session")); // get JSON session data
@@ -13,7 +14,7 @@ class Dashboard extends Component {
   }
 
   render() {
-    // console.log('from dashboard: ', this.props);
+    console.log('from dashboard: ', this.props);
     const { loggedIn, creds } = this.props.auth;
 
     return (

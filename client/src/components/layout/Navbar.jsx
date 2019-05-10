@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 import { logoutUser } from "../../actions/authenticate";
 import logo from "../../assets/musictreelogo.png";
-
+// navbar
 class Navbar extends Component {
   state = {
     navOpen: false,

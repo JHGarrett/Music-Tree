@@ -4,7 +4,7 @@ import axios from "axios";
 import { connect } from "react-redux";
 
 import { editUser } from "../../../actions/authenticate";
-
+//  display all the user info if they are loged in. if not logged in display regular dashtop
 class DashTop extends Component {
   handleUpdateTheme(theme) {
     let req = {
@@ -31,6 +31,8 @@ class DashTop extends Component {
         <div className="user-links">
           <ul>
             <li>
+              {/* display the users playlist..... STILL A WORK IN PROGRESS */}
+              
               <NavLink
                 className="dashboard__link"
                 to={`/user/${_id}/playlists`}
@@ -39,13 +41,18 @@ class DashTop extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink className="dashboard__link" to={`/user/${_id}/saved`}>
+              {/* display their liked videos */}
+
+              <NavLink
+                className="dashboard__link"
+                to={`/user/${_id}/saved`}
+              >
                 Liked Videos
               </NavLink>
             </li>
           </ul>
         </div>
-
+        {/* allow them to change the themes of the player */}
         <div className="dash-theme">
           <h4 className="theme-title">Theme:</h4>
           <select
