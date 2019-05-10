@@ -32,7 +32,7 @@ app.use(compression());
 
 /*
  * MONGO DB SETUP
- * Test locally using 'mongodb://localhost:27017/geckos32'
+ * Test locally using 'mongodb://localhost:27017/musictree'
  * Setup mLabs using keys.DB
  * Comment/Uncomment accordingly
  */
@@ -70,3 +70,14 @@ app.use((req, res, next) => {
   err.status = 404;
   next(err);
 });
+// Start app on specified port
+app.listen(PORT, (err) => {
+  if (err) {
+    console.log('There was an error connecting to the server', err);
+  }
+  else { 
+    console.log('You have connected to the server on PORT: ', PORT); 
+  }
+});
+
+module.exports = app;
