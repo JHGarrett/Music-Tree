@@ -33,7 +33,7 @@ export default class Footer extends Component {
                     YouTube <i className="fab fa-youtube" />
                   </a>
                 </p>
-                <p className="geckos-credit">
+                <p className="musictree-credit">
                   Copyright &copy; 2019{" "}
                   <a
                     className="dashboard__link"
