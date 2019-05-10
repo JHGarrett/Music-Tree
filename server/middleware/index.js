@@ -1,4 +1,4 @@
-/ All middleware functions
+//All middleware functions
 const passport = require('passport');
 const Playlist = require('../models/playlist');
 const Video = require('../models/video');
