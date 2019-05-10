@@ -1,5 +1,7 @@
 import React from "react";
 
+
+// this is the about page that will display info about the app and the creator
 const About = props => (
   <div className={props.launch ? "page-wrapper nodash" : "page-wrapper"}>
     <div className="about-wrapper">

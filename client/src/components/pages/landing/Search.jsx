@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import PlayVideo from "./PlayVideo.jsx";
 
+
+// search for the selected videos that are reccommended
 export default class Search extends Component {
   componentDidMount() {
     this.props.handleShowDash();

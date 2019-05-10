@@ -5,6 +5,10 @@ import { connect } from "react-redux";
 
 import { editUser } from "../../../actions/authenticate";
 
+
+// allow the user to select an avatar for the profile. for the mvp it will be pre defined
+
+// i would like to have the user be able to upload their own image. 
 class AvatarSelection extends Component {
   componentDidMount() {
     let editBox = document.getElementById("edit-avatar-box");
@@ -40,7 +44,7 @@ class AvatarSelection extends Component {
   }
 
   render() {
-    // console.log('avatar props: ', this.props);
+    console.log('avatar props: ', this.props);
 
     return (
       <div className="avatar-wrapper" id="edit-avatar-box">

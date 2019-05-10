@@ -29,7 +29,7 @@ class Navbar extends Component {
   render() {
     console.log("FROM NAVBAR PROPS: ", this.props);
     const id = this.props.auth._id ? this.props.auth._id : "profile";
-
+// display different routes the user can take on the app
     return (
       <div className={this.props.theme}>
         <nav className="navBar">

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { loginUser } from "../../../actions/authenticate";
-
+//  allow the user to login with different options
 class Login extends Component {
   handleSubmit(e) {
     e.preventDefault();
@@ -36,6 +36,9 @@ class Login extends Component {
     let modal = document.getElementById("deleteErrorMessage");
     modal.style.display = "none";
   }
+  // allow them tp login with either username and password, facebook or google. 
+  
+  // not sure if i will have the facebook and google done by mvp
   render() {
     return (
       <div

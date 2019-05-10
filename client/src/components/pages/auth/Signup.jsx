@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { signupUser } from "../../../actions/authenticate";
-
+//  allow the user to sign up for the app
 class Signup extends Component {
   handleSubmit(e) {
     e.preventDefault();
@@ -38,6 +38,9 @@ class Signup extends Component {
     flashMessage.style.display = "none";
   }
 
+  // allow them to sign up with username and password, facebook or google
+
+  // not sure if the facebook and google signup will be completed by mvp
   render() {
     return (
       <div
