@@ -64,3 +64,32 @@
   text-transform: uppercase;
 }
 
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form__input {
+  @include themify($themes) {
+    color: themed('textColor');
+    border-bottom: 1px solid themed('lightShadow');
+  }
+  
+  border-radius: 0;
+  background-color: transparent;
+  padding: .5em;
+  margin: 0.5em;
+  width: 400px;
+  outline: none;
+  border: none;
+  font-family: 'ubuntu', sans-serif;
+  font-size: 1.2em;
+
+  &:focus {
+    border-bottom: 1px solid $accent-blue;
+  }
+}
+
