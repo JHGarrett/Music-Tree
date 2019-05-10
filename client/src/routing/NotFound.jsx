@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+// display the 404 page if route error
 const NotFound = () => (
   <div className="not-found page-wrapper nodash">
     <h2>

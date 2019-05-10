@@ -3,20 +3,20 @@ import { connect } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import axios from "axios";
 
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
-import Dashboard from "../components/layout/Dashboard";
-import Home from "../components/pages/landing/Home";
-import Search from "../components/pages/landing/Search";
-import PlayVideo from "../components/pages/landing/PlayVideo";
-import About from "../components/pages/moreinfo/About";
-import Signup from "../components/pages/auth/Signup";
-import Login from "../components/pages/auth/Login";
-import Profile from "../components/pages/user/Profile";
-import SavedVideos from "../components/pages/user/SavedVideos";
-import Playlist from "../components/pages/user/Playlist";
-import NotFound from "./NotFound";
-import ScrollToTop from "./ScrollToTop";
+import Navbar from "../components/layout/Navbar.jsx";
+import Footer from "../components/layout/Footer.jsx";
+import Dashboard from "../components/layout/Dashboard.jsx";
+import Home from "../components/pages/landing/Home.jsx";
+import Search from "../components/pages/landing/Search.jsx";
+import PlayVideo from "../components/pages/landing/PlayVideo.jsx";
+import About from "../components/pages/moreinfo/About.jsx";
+import Signup from "../components/pages/auth/Signup.jsx";
+import Login from "../components/pages/auth/Login.jsx";
+import Profile from "../components/pages/user/Profile.jsx";
+import SavedVideos from "../components/pages/user/SavedVideos.jsx";
+import Playlist from "../components/pages/user/Playlist.jsx";
+import NotFound from "./NotFound.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 // Seed Data
 import { dummyUserData, dummySavedVideosData } from "../seedData/seedData";

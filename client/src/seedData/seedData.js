@@ -1,5 +1,5 @@
 // Used for client side testing
-
+// dummy seed data for testing. this will not be used in production
 module.exports = {
   dummyUserData: {
     loggedIn: true,
