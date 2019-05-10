@@ -64,4 +64,27 @@ module.exports = (passport) => {
     }
   }));
 
-  
+    // OAuth Google Config
+  passport.use(new GoogleStrategy({
+    clientID: keys.googleClientID,
+    clientSecret: keys.googleClientSecret,
+    callbackURL:'/routes/auth/google/callback', //route the user is going to be send to after they authenticate
+  }, async (accessToken, refreshToken, profile, done) => {
+    try {
+      let user = await User.findOne({ googleID: profile.id });
+      if (!user) {
+        let newUser = new User();
+        newUser.googleID = profile.id;
+        newUser.username = profile.displayName;
+        newUser.email = profile.emails[0].value;
+        newUser = await newUser.save();
+        console.log('new google user created: ', newUser);  
+        return done(null, newUser);  
+      } else {
+        console.log('LOGGED IN GOOGLE ACCOUNT: ', user);
+        return done(null, user);
+      }
+    } catch (err) {
+      return done(err, null);
+    }
+  }));
