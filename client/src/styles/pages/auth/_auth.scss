@@ -28,3 +28,39 @@
     background: darken(#CD5542, 5%);
   }
 }
+
+.facebook-button {
+  background: #405993;
+
+  &:hover {
+    background: darken(#405993, 5%);
+  }
+}
+
+.auth-icon {
+  font-size: 2em;
+  padding: 0 0.5em;
+}
+
+.divider {
+  @include themify($themes) {
+    border-top: 1px solid darken(themed('backgroundColor'), 10%);
+  }
+
+  width: 100%;
+  margin: 1em 0;
+  // border-top: 1px solid darken($bg-grey, 10%);
+  text-align: center;
+  display: block;
+  line-height: 1px;
+  position: relative;
+}
+
+.divider-title {
+  background: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0 1.5em;
+  text-transform: uppercase;
+}
+
