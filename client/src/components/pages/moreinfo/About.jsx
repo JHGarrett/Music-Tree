@@ -52,7 +52,7 @@ const About = props => (
                   src="https://avatars0.githubusercontent.com/u/44414269?s=400&u=4b07d7ea562ec9d8d8a8065f50b137b932ece190&v=4"
                 />
               </div>
-              <p>John</p>
+              <p>John Garrett</p>
             </div>
           </a>
         </div>

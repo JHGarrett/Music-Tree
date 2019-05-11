@@ -88,7 +88,7 @@
 .nav-wrapper {
   grid-area: nav-wrapper;
   display: inline-grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 2fr .9fr 2fr;
   grid-template-areas:
     "nav . login";
   align-items: center;
