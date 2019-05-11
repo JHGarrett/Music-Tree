@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import { logoutUser } from "../../actions/authenticate";
-import logo from "../../../public/dist/images/logo.png";
+import logo from "../../assets/logo.png";
 // navbar
 class Navbar extends Component {
   state = {
@@ -38,7 +38,7 @@ class Navbar extends Component {
               <img className="test" src={logo} />
             </NavLink>
             <NavLink className="brand" exact to="/">
-              Music-Tree
+              
             </NavLink>
           </div>
           <div className="hamburger">
