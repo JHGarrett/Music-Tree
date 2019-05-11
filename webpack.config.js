@@ -72,7 +72,7 @@ module.exports = {
           //     screw_ie8: true
           //   }
           // }),
-          new webpack.optimize.CommonsChunkPlugin({
+          new CommonsChunkPlugin({
             name: "vendor"
           })
         ]
