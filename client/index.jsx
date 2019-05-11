@@ -12,6 +12,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
+styles
 
 // use in development for hot module reloading
 if (module.hot) {

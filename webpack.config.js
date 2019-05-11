@@ -10,6 +10,12 @@ module.exports = {
   entry: {
     entry: ["babel-polyfill", "react-hot-loader/patch", "./client/index.jsx"],
     vendor: ["react", "react-dom", "react-redux", "react-router"]
+    
+  },
+   resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
   },
   optimization: {
     splitChunks: {

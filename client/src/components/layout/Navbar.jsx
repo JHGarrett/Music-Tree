@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import { logoutUser } from "../../actions/authenticate";
-import logo from "../../assets/musictreelogo.png";
+import logo from "../../../public/dist/images/logo.png";
 // navbar
 class Navbar extends Component {
   state = {
