@@ -25,7 +25,7 @@ const search = e.target.elements.search.value;
             onSubmit={this.handleSearchInput.bind(this)}
           >
             <button type="submit" className="landing-search-icon">
-              <i className="fas fa-seach" />
+              <i className="fas fa-search" />
             </button>
             <input className="landing-search" name="search" />
           </form>

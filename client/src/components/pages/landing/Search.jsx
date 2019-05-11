@@ -45,7 +45,7 @@ export default class Search extends Component {
             className="landing-searchbar"
             onSubmit={this.handleSearchInput.bind(this)}
           >
-            <button type="submit" className="landing-serch-icon button">
+            <button type="submit" className="landing-search-icon button">
               <i className="fas fa-search" />
             </button>
             <input
