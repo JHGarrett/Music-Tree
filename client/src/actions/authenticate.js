@@ -8,7 +8,6 @@ import {
   UPDATE_USER,
   DELETE_USER
 } from "./types";
-// import { exists } from "fs";
 // var fs = require ('fs');
 
 // user login
