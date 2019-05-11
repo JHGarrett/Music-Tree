@@ -2,6 +2,8 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const cssExtract = new ExtractTextPlugin("styles.css");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
@@ -50,16 +52,21 @@ module.exports = {
       ? [
           cssExtract,
           new webpack.optimize.ModuleConcatenationPlugin(),
-          new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            beautify: false,
-            comments: false,
-            compress: {
-              warnings: false,
-              drop_console: true,
-              screw_ie8: true
-            }
-          }),
+          module.exports = {
+  optimization: {
+    minimizer: [new UglifyJsPlugin()],
+  },
+},
+          // new webpack.optimize.UglifyJsPlugin({
+          //   sourceMap: true,
+          //   beautify: false,
+          //   comments: false,
+          //   compress: {
+          //     warnings: false,
+          //     drop_console: true,
+          //     screw_ie8: true
+          //   }
+          // }),
           new webpack.optimize.CommonsChunkPlugin({
             name: "vendor"
           })
