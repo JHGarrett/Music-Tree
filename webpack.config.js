@@ -4,7 +4,6 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const cssExtract = new ExtractTextPlugin("styles.css");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
-
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
 module.exports = {
@@ -52,11 +51,17 @@ module.exports = {
       ? [
           cssExtract,
           new webpack.optimize.ModuleConcatenationPlugin(),
-          module.exports = {
-  optimization: {
-    minimizer: [new UglifyJsPlugin()],
-  },
-},
+
+          new UglifyJsPlugin({
+            uglifyOptions: {
+              warnings: false,
+              ie8: false,
+              output: {
+                comments: false
+              }
+            }
+          }),
+
           // new webpack.optimize.UglifyJsPlugin({
           //   sourceMap: true,
           //   beautify: false,
