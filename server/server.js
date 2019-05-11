@@ -16,8 +16,8 @@ const publicPath = path.join(__dirname, "..", "client/public");
 const keys = require("./config/keys"); // access config keys/sensitive info
 const PORT = process.env.PORT || 8000; // set PORT number
 const router = require("./routes"); // connect all routing
-// const url = "mongodb://localhost:27017/musictree"; // local mongoDB
-const url = keys.DB; // mLabs mongoDB
+const url = "mongodb://localhost:27017/musictree"; // local mongoDB
+// const url = keys.DB; // mLabs mongoDB
 
 const app = express();
 
@@ -36,7 +36,7 @@ app.use(compression());
  * Setup mLabs using keys.DB
  * Comment/Uncomment accordingly
  */
-mongoose.connect(url);
+mongoose.connect(url, { useNewUrlParser: true });
 
 // Passport Config
 app.use(

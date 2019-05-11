@@ -5,7 +5,7 @@ import { Link, withRouter } from "react-router-dom";
 class Home extends Component {
   handleSearchInput(e) {
     e.preventDefault();
-    const search = e.targe.elements.search.value;
+const search = e.target.elements.search.value;
     this.props.history.push(`/search/${search}`);
   }
 //  display small info about the app and allow the uwer to search for new stuff
