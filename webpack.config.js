@@ -11,6 +11,29 @@ module.exports = {
     entry: ["babel-polyfill", "react-hot-loader/patch", "./client/index.jsx"],
     vendor: ["react", "react-dom", "react-redux", "react-router"]
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'async',
+      minSize: 30000,
+      maxSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
+  },
   output: {
     //create output path
     filename: "[name].bundle.js",
@@ -72,9 +95,7 @@ module.exports = {
           //     screw_ie8: true
           //   }
           // }),
-          new CommonsChunkPlugin({
-            name: "vendor"
-          })
+          
         ]
       : [new webpack.HotModuleReplacementPlugin()],
   devtool:
