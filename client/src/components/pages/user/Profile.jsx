@@ -8,7 +8,7 @@ import { editUser, fetchUser } from "../../../actions/authenticate";
 import EditProfile from "./EditProfile.jsx";
 import SavedVideos from "./SavedVideos.jsx";
 import AvatarSelection from "./AvatarSelection.jsx";
-// allow the user if logged in to edit their profile via the edit button
+
 class Profile extends Component {
   state = {
     avatar: false,
@@ -58,10 +58,10 @@ class Profile extends Component {
   }
 
   render() {
-    console.log("this is from profile: ", this.props);
+    // console.log('this is from profile: ', this.props);
     const { loggedIn, creds } = this.props.auth;
     const { edit, editButton } = this.state.editUser;
-    // display user profile if they have logged in and already have an account
+
     return (
       <div className="profile-page-wrapper">
         <div className="profile-banner">
@@ -72,11 +72,11 @@ class Profile extends Component {
             Profile
           </h1>
         </div>
-        {/* welcome banner */}
+
         <div className="welcome twopercent-spacing">
-          <h2>Glad to have you back,</h2>
+          <h2>Welcome back,</h2>
         </div>
-        {/* allow them to edit their username to something else */}
+
         <div className="profile-username-edit twopercent-spacing">
           {loggedIn ? (
             <h2>
@@ -100,7 +100,7 @@ class Profile extends Component {
             />
           ) : null}
         </div>
-        {/* allow them to change their avatar */}
+
         <div className="avatar-selection twopercent-spacing underline">
           <button
             id="edit-avatar-toggle"
@@ -116,8 +116,7 @@ class Profile extends Component {
             />
           )}
         </div>
-        {/* allow them to change the theme layout  */}
-        {/* need to update this in sass files */}
+
         <div className="profile-themeselect twopercent-spacing">
           <h4 className="theme-title">Theme:</h4>
           <select
