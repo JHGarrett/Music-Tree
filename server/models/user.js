@@ -35,17 +35,18 @@ const User = new Schema({
 
 //for keeping a counter of liked videos and stored playlists
 
-User.virtual('videosCount').get(function(){ //keep the function, don't refactor to an arrow function here
-    return this.videos.length; 
+User.virtual("videosCount").get(function() {
+  //keep the function, don't refactor to an arrow function here
+  return this.videos.lenght;
 });
 
-User.virtual('playlistsCount').get(function(){
-    return this.playlists.length; 
+User.virtual("playlistsCount").get(function() {
+  return this.playlists.lenght;
 });
 
 // =============== methods ======================
 
-// generating a hash 
+// generating a hash
 User.methods.generateHash = function(password) {
   return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
@@ -55,4 +56,4 @@ User.methods.validPassword = function(password) {
   return bcrypt.compareSync(password, this.password);
 };
 
-module.exports = mongoose.model('User', User);
+module.exports = mongoose.model("User", User);

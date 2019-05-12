@@ -17,7 +17,7 @@ router.post(
   (req, res) => {
     console.log("successfully signed up: ", req.user);
     res.send(req.user);
-    // res.redirect('/user/' + req.user._id);
+    res.redirect('/user/' + req.user._id);
   }
 );
 
@@ -33,7 +33,7 @@ router.post(
   (req, res) => {
     console.log("successfully logged in: ", req.user);
     res.send(req.user);
-    // res.redirect('/user/' + req.user._id);
+    res.redirect('/user/' + req.user._id);
   }
 );
 
@@ -122,8 +122,8 @@ router.get("/logout", (req, res) => {
 });
 
 //For testing 
-// router.get('/api/current_user', (req, res)=> {
-//   res.send(req.user); //passport attach functions to the request
-// });
+router.get('/api/current_user', (req, res)=> {
+  res.send(req.user); //passport attach functions to the request
+});
 
 module.exports = router;

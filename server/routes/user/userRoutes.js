@@ -81,7 +81,7 @@ router.post("/user/:id/edit", middleware.isLoggedIn, async (req, res, next) => {
       user.username = req.body.username;
       user.location = req.body.location;
       user.img = req.body.img;
-      user.theme = req.body.theme || "theme-musictree";
+      user.theme = req.body.theme || "theme-gecho";
       user = await user.save();
       res.send({ response: user });
     }

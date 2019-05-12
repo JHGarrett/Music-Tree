@@ -1,3 +1,5 @@
+
+require('dotenv').config();
 //Do commit - keys will be defined in Heroku,no risk in commiting
 module.exports = {
   googleClientID: process.env.GOOGLE_CLIENT_ID,

@@ -10,7 +10,7 @@ const keys = require("../config/keys");
  */
 
 const API_KEY = keys.youtubeApiKey;
-// console.log(API_KEY);
+console.log(API_KEY);
 
 router.get("/search/:query", (req, res) => {
   console.log('this is params:', req.params.query);
