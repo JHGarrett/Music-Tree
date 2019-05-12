@@ -124,7 +124,7 @@ class Profile extends Component {
             value={this.props.auth.creds.theme || "theme-musictree"}
             onChange={e => this.handleUpdateTheme(e.target.value)}
           >
-            <option value="theme-musictree">Music-Tree</option>
+            <option value="theme-musictree">MusicTree</option>
             <option value="theme-twilight">Twilight</option>
             <option value="theme-peacock">Peacock</option>
             <option value="theme-good-vibes">Good Vibes</option>

@@ -3,10 +3,8 @@ import { connect } from "react-redux";
 
 import { addLikedVideo } from "../../../actions/userVideos";
 
-
-// allow the user to play the slected video
 const PlayVideo = props => {
-  console.log("this is playvideo props: ", props);
+  // console.log('this is playvideo props: ', props);
   window.scrollTo(0, 0);
 
   if (props.location) {
@@ -25,9 +23,7 @@ const PlayVideo = props => {
   } else if (props.selectedVideo) {
     const { title, description, thumbnail, url } = props.selectedVideo;
     const yturl = `https://www.youtube.com/embed/${url}`;
-// does a cll to find videos
 
-// allow them to like a search a video
     return (
       <div>
         <div>

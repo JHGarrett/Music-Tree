@@ -8,7 +8,8 @@ module.exports = {
       __v: 0,
       username: "JHGarrett",
       password: "$2a$08$2Lbj5d5rku1LjU7rb/TwtOl0nyNY7YjTwyAl9r2JwEimdXi894Nnq",
-      img: "https://image.flaticon.com/icons/png/512/145/145857.png"
+      img:
+        "http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/profile-icon.png"
     }
   },
   dummySavedVideosData: [

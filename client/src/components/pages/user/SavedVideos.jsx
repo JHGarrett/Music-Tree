@@ -20,12 +20,12 @@ class SavedVideos extends Component {
   }
 
   render() {
-    console.log("from savedvideos.jsx:", this.props);
+    // console.log('from savedvideos.jsx:', this.props);
 
     if (this.props.likedVideos && this.props.likedVideos.length > 0) {
       return (
         <div className="page-wrapper saved-video-container">
-          <h2>Watch your liked videos</h2>
+          <h2>Re-watch your liked videos</h2>
           <div className="saved-video-list">
             {this.props.likedVideos.map((video, index) => {
               return (
@@ -58,7 +58,7 @@ class SavedVideos extends Component {
     } else {
       return (
         <div className="page-wrapper saved-video-container">
-          <h1>View your saved videos</h1>
+          <h1>Take another looked at your saved videos here!</h1>
         </div>
       );
     }

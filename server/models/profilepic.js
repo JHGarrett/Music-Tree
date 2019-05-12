@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ProfilePicSchema = new Schema({
-  gechoID: {
+  musictreeID: {
     type: Number,
     unique: true
   },

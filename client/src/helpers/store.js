@@ -1,16 +1,17 @@
 import { createStore, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
-import RootReducer from "../reducers";
 import { createLogger } from "redux-logger"; // must be LAST middleware in chain according to docs
+import RootReducer from "../reducers";
 
 const loggerMiddleware = createLogger();
 
-// create store for redux
-
-// apply redux thunk- will return functions instead of actions
-
-// apply redux logger-- will show errors in the log
+/*
+ * Create STORE for redux
+ * Apply redux thunk (to return functions instead of actions)
+ * Apply redux logger (to show changes and errors in log)
+ */
 
 export const store = createStore(RootReducer, applyMiddleware(thunkMiddleware));
 
-loggerMiddleware;
+// loggerMiddleware
+// add redux-loggger last when in development

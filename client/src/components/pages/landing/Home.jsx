@@ -1,25 +1,26 @@
 import React, { Component } from "react";
-import RectDOM from "react-dom";
+import ReactDOM from "react-dom";
 import { Link, withRouter } from "react-router-dom";
-// home page/landing page for the app.
+
 class Home extends Component {
   handleSearchInput(e) {
     e.preventDefault();
-const search = e.target.elements.search.value;
+    const search = e.target.elements.search.value;
+    // this.props.handleSearchInput(search);
     this.props.history.push(`/search/${search}`);
   }
-//  display small info about the app and allow the uwer to search for new stuff
+
   render() {
-    console.log("from Home", this.props);
+    // console.log('from home', this.props);
     return (
       <div
         className={this.props.launch ? "page-wrapper nodash" : "page-wrapper"}
       >
         <div className="landing-page-title">
-          <h1>Discover new music!</h1>
+          <h1>Discover new songs and artists based on your interests!</h1>
         </div>
         <div className="searchbar-wrapper">
-          <h2>Type in a song or Artist</h2>
+          <h2>Get Started with your favorite song/artist!</h2>
           <form
             className="landing-searchbar"
             onSubmit={this.handleSearchInput.bind(this)}

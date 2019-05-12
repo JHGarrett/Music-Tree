@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom';
 // footer page
 export default class Footer extends Component {
   render() {

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 import { logoutUser } from "../../actions/authenticate";
 import logo from "../../assets/logo.png";
-// navbar
+
 class Navbar extends Component {
   state = {
     navOpen: false,
@@ -27,9 +27,9 @@ class Navbar extends Component {
   };
 
   render() {
-    console.log("FROM NAVBAR PROPS: ", this.props);
+    // console.log('FROM NAVBAR PROPS: ', this.props);
     const id = this.props.auth._id ? this.props.auth._id : "profile";
-// display different routes the user can take on the app
+
     return (
       <div className={this.props.theme}>
         <nav className="navBar">
@@ -38,7 +38,7 @@ class Navbar extends Component {
               <img className="test" src={logo} />
             </NavLink>
             <NavLink className="brand" exact to="/">
-              
+              MT
             </NavLink>
           </div>
           <div className="hamburger">

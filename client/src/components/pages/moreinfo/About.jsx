@@ -15,7 +15,7 @@ const About = props => (
 
       <div className="about-container">
         <h2>The App</h2>
-        {/* <p>this is where i will put a description of the app and </p> */}
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae iste quo nulla deleniti earum ratione doloribus quibusdam saepe voluptatum minus, dolore dicta ad amet officia delectus nemo rerum dolor iure?</p>
       </div>
 
       <div className="divider" />
@@ -32,7 +32,6 @@ const About = props => (
             Youtube <i className="fab fa-youtube" />
           </a>
         </span>
-        {/* <span>list the rest of the tech that was used</span> */}
       </div>
 
       <div className="divider" />

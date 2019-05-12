@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import PlayVideo from "./PlayVideo.jsx";
 
-
-// search for the selected videos that are reccommended
 export default class Search extends Component {
   componentDidMount() {
     this.props.handleShowDash();
@@ -23,7 +21,7 @@ export default class Search extends Component {
   }
 
   saveSelectedVideo(video) {
-    console.log("youtube video details: ", video);
+    // console.log('this is the youtube video details: ', video);
     const selectedVideo = {
       title: video.snippet.title,
       description: video.snippet.description,
@@ -35,7 +33,7 @@ export default class Search extends Component {
   }
 
   render() {
-    console.log("from search: ", this.prpos);
+    // console.log('from search: ', this.props);
     const { videos, selectedVideo } = this.props.stateData;
 
     return (

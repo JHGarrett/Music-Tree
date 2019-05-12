@@ -1,4 +1,3 @@
-// if the user is not logged in/signed up this will encourage them to do so.
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 // explain to the user why they should sign up and have full access to all the benefits

@@ -1,4 +1,3 @@
-// display the users saved videos
 import axios from "axios";
 
 export const ADD_USER_VIDEO = "ADD_USER_VIDEO";

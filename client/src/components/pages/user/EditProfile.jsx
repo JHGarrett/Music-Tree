@@ -4,12 +4,12 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
 import { editUser, deleteUser } from "../../../actions/authenticate";
-// allow the user to edit their profile
+
 class EditProfile extends Component {
   componentDidMount() {
     this.handleCloseProfileBox();
   }
-  // closing the profile box.
+
   handleCloseProfileBox() {
     let editBox = document.getElementById("edit-profile-box");
     let editButton = document.getElementById("edit-profile-toggle");
@@ -100,7 +100,7 @@ class EditProfile extends Component {
       displayName,
       _id
     } = this.props.auth.creds;
-    // allow the user to update the user profile page and update the information.
+
     return (
       <div>
         <div className="edit-form" id="edit-profile-box">
@@ -160,14 +160,16 @@ class EditProfile extends Component {
           )}
         </div>
         <br />
-        {/* let the user know that they are going to delete the account */}
+
         <div className="warning-window" id="deleteModal">
           <div className="modal-content">
             <span className="close-modal" onClick={this.closeModalDelete}>
               &times;
             </span>
             <h3>
-              Do you really want to delete your account? Sorry to see you leave.
+              Are you sure you want to do this? Deleting your account will
+              permanently erase all user data including: saved preferences,
+              videos, and playlists.
             </h3>
             <button
               className="button profile-button"
@@ -185,13 +187,16 @@ class EditProfile extends Component {
             </button>
           </div>
         </div>
-        {/* the user name is already taken. let them try again. */}
+
         <div className="warning-window" id="duplicateUserModal">
           <div className="modal-content">
             <span className="close-modal" onClick={this.closeModalDuplicate}>
               &times;
             </span>
-            <h3>That user name is already taken. Please try again.</h3>
+            <h3>
+              The username you have chosen is unavailable. Please try another
+              username.
+            </h3>
             <button
               className="button profile-button"
               onClick={this.closeModalDuplicate}
