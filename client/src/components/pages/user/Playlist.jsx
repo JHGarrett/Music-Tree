@@ -6,7 +6,7 @@ export default class Playlist extends Component {
   render() {
     return (
       <div className="page-wrapper">
-        <h1>Still in the Works!</h1>
+        <h1>Work in progress! Check back soon!</h1>
         <Link to="/" className="link">
           Go to Homepage
         </Link>
