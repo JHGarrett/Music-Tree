@@ -44,7 +44,7 @@ mongoose.connect(url);
 app.use(
   cookieSession({
     maxAge: 24 * 60 * 60 * 1000,
-    keys: [keys.cookieKey]
+    keys: ["key1", "key2"]
   })
 );
 app.use(passport.initialize());
