@@ -19,7 +19,7 @@ const router = require("./routes"); // connect all routing
 // const url = "mongodb+srv://dbUser:<password>@musictree-fz6fp.mongodb.net/test?retryWrites=true";
 // const MONGODB_URI = keys.MONGODB_URI;
 // const url = keys.DB; // mLabs mongoDB
-const url = "mongodb://localhost:27017/musictree"; // local mongoDB
+const url = keys.MONGODB_URI; // altas mongoDB
 
 const app = express();
 
