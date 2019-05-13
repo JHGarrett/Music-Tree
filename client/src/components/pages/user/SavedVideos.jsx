@@ -20,42 +20,42 @@ class SavedVideos extends Component {
   }
 
   render() {
-    // console.log('from savedvideos.jsx:', this.props);
+    console.log('from savedvideos.jsx:', this.props);
 
-    // if (this.props.likedVideos && this.props.likedVideos.length > 0) {
-    //   return (
-    //     <div className="page-wrapper saved-video-container">
-    //       <h2>Re-watch your liked videos</h2>
-    //       <div className="saved-video-list">
-    //         {this.props.likedVideos.map((video, index) => {
-    //           return (
-    //             <div key={index} className="saved-video-list-items">
-    //               <button
-    //                 className="button video-delete"
-    //                 onClick={() =>
-    //                   this.props.dispatch(
-    //                     deleteLikedVideo(this.props.auth.creds._id, video._id)
-    //                   )
-    //                 }
-    //               >
-    //                 <i className="fas fa-times" />
-    //               </button>
-    //               <Link
-    //                 to={{
-    //                   pathname: "/playvideo",
-    //                   state: { video: video }
-    //                 }}
-    //               >
-    //                 <img src={video.thumbnail} alt="video thumbnail" />
-    //                 <h4>{video.title}</h4>
-    //               </Link>
-    //             </div>
-    //           );
-    //         })}
-    //       </div>
-    //     </div>
-    //   );
-    // } else {
+    if (this.props.likedVideos && this.props.likedVideos.length > 0) {
+      return (
+        <div className="page-wrapper saved-video-container">
+          <h2>Re-watch your liked videos</h2>
+          <div className="saved-video-list">
+            {this.props.likedVideos.map((video, index) => {
+              return (
+                <div key={index} className="saved-video-list-items">
+                  <button
+                    className="button video-delete"
+                    onClick={() =>
+                      this.props.dispatch(
+                        deleteLikedVideo(this.props.auth.creds._id, video._id)
+                      )
+                    }
+                  >
+                    <i className="fas fa-times" />
+                  </button>
+                  <Link
+                    to={{
+                      pathname: "/playvideo",
+                      state: { video: video }
+                    }}
+                  >
+                    <img src={video.thumbnail} alt="video thumbnail" />
+                    <h4>{video.title}</h4>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    } else {
       return (
         <div className="page-wrapper saved-video-container">
           <h1>Take another looked at your saved videos here!</h1>
@@ -63,7 +63,7 @@ class SavedVideos extends Component {
       );
     }
   }
-// }
+}
 
 const mapStateToProps = state => {
   return {

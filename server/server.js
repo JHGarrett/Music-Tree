@@ -16,8 +16,10 @@ const publicPath = path.join(__dirname, "..", "client/public");
 const keys = require("./config/keys"); // access config keys/sensitive info
 const PORT = process.env.PORT || 8000; // set PORT number
 const router = require("./routes"); // connect all routing
-const url = "mongodb://localhost:27017/musictree"; // local mongoDB
+// const url = "mongodb+srv://dbUser:<password>@musictree-fz6fp.mongodb.net/test?retryWrites=true";
+// const MONGODB_URI = keys.MONGODB_URI;
 // const url = keys.DB; // mLabs mongoDB
+const url = "mongodb://localhost:27017/musictree"; // local mongoDB
 
 const app = express();
 

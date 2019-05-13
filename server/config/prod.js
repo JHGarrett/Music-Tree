@@ -10,5 +10,7 @@ module.exports = {
   facebookProfileFields: process.env.FACEBOOK_PROFILE_FIELDS,
   DB: process.env.DB,
   youtubeApiKey: process.env.YOUTUBE_API_KEY,
-  cookieKey: process.env.COOKIE_KEY
+  cookieKey: process.env.COOKIE_KEY,
+  MONGODB_URI: process.env.MONGODB_URI,
+
 };

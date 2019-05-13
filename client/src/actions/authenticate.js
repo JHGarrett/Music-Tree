@@ -74,7 +74,7 @@ export const signupUser = (creds, history) => {
 export const logoutUser = () => {
   return dispatch => {
     axios.get("routes/logout");
-    dispatch({ type: "LOGOUT_USER" });
+    dispatch({ type: LOGOUT_USER });
     sessionStorage.removeItem("session");
     sessionStorage.removeItem("videos");
     window.location.reload(); // refresh page and handle flash message here
@@ -89,7 +89,7 @@ export const logoutUser = () => {
 export const editUser = newCreds => {
   return async dispatch => {
     const res = await axios.get(`/routes/user/${newCreds._id}`);
-    dispatch({ type: "UPDATE_USER", payload: res.data });
+    dispatch({ type: UPDATE_USER, payload: res.data });
     sessionStorage.setItem("session", JSON.stringify(res.data));
   };
 };
@@ -106,7 +106,7 @@ export const deleteUser = (id, history) => {
     if (res.data.response === "deleted") {
       sessionStorage.removeItem("session");
       sessionStorage.removeItem("videos");
-      dispatch({ type: "DELETE_USER" });
+      dispatch({ type: DELETE_USER });
       history.push("/");
       // window.location.reload(); // find a way to refresh page
     }
