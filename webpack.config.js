@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const cssExtract = new ExtractTextPlugin("styles.css");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
@@ -10,35 +9,6 @@ module.exports = {
   entry: {
     entry: ["babel-polyfill", "react-hot-loader/patch", "./client/index.jsx"],
     vendor: ["react", "react-dom", "react-redux", "react-router"]
-    
-  },
-   resolve: {
-    alias: {
-      'react-dom': '@hot-loader/react-dom'
-    }
-  },
-  optimization: {
-    splitChunks: {
-      chunks: 'async',
-      minSize: 30000,
-      maxSize: 0,
-      minChunks: 1,
-      maxAsyncRequests: 5,
-      maxInitialRequests: 3,
-      automaticNameDelimiter: '~',
-      name: true,
-      cacheGroups: {
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          priority: -10
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true
-        }
-      }
-    }
   },
   output: {
     //create output path
@@ -80,28 +50,19 @@ module.exports = {
       ? [
           cssExtract,
           new webpack.optimize.ModuleConcatenationPlugin(),
-
-          new UglifyJsPlugin({
-            uglifyOptions: {
+          new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            beautify: false,
+            comments: false,
+            compress: {
               warnings: false,
-              ie8: false,
-              output: {
-                comments: false
-              }
+              drop_console: true,
+              screw_ie8: true
             }
           }),
-
-          // new webpack.optimize.UglifyJsPlugin({
-          //   sourceMap: true,
-          //   beautify: false,
-          //   comments: false,
-          //   compress: {
-          //     warnings: false,
-          //     drop_console: true,
-          //     screw_ie8: true
-          //   }
-          // }),
-          
+          new webpack.optimize.CommonsChunkPlugin({
+            name: "vendor"
+          })
         ]
       : [new webpack.HotModuleReplacementPlugin()],
   devtool:
