@@ -38,7 +38,7 @@ class Navbar extends Component {
               <img className="test" src={logo} />
             </NavLink>
             <NavLink className="brand" exact to="/">
-              MT
+            
             </NavLink>
           </div>
           <div className="hamburger">
