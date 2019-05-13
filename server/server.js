@@ -17,8 +17,8 @@ const keys = require("./config/keys"); // access config keys/sensitive info
 const PORT = process.env.PORT || 8000; // set PORT number
 const router = require("./routes"); // connect all routing
 // const url = "mongodb://localhost:27017/musictree"; // local mongoDB
-const url = keys.DB; // altas mongoDB
-
+const url = MONGODB_URI; // altas mongoDB
+const MONGODB_URI = "mongodb://heroku_m8g26hwt:epfja9ik38i4o0k6ahfgjgsjs5@ds155596.mlab.com:55596/heroku_m8g26hwt";
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true })); // returns middleware that only parses urlencoded bodies; extended allows for the qs library
