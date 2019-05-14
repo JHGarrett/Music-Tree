@@ -163,12 +163,67 @@ class AvatarSelection extends Component {
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
-            src="https://image.flaticon.com/icons/svg/201/201608.svg"
+            src="https://cdn0.iconfinder.com/data/icons/people-jobs-set-2/128/jobs-08-512.png"
           />
           <img
             onClick={e => this.handleAvatarClick(e)}
             className="avatars"
             src="https://image.flaticon.com/icons/svg/1046/1046374.svg"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://store.playstation.com/store/api/chihiro/00_09_000/container/US/en/999/UP2477-CUSA06694_00-AV00000000000022/1520762915000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7694bdfd-5d4e-49fb-9231-a9c24c0a5d39/d8rw8hq-db1270d3-fb5d-4006-be6e-647b9c99c833.png/v1/fill/w_400,h_400,q_80,strp/grumpy_cat_avatar_by_micrerofurioso_d8rw8hq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDAwIiwicGF0aCI6IlwvZlwvNzY5NGJkZmQtNWQ0ZS00OWZiLTkyMzEtYTljMjRjMGE1ZDM5XC9kOHJ3OGhxLWRiMTI3MGQzLWZiNWQtNDAwNi1iZTZlLTY0N2I5Yzk5YzgzMy5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.OGCTJNOTcDohe4BFRV6cxO9hCwiztZ4rnkVQw71LRQo"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Penguin-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn4.iconfinder.com/data/icons/animals-137/128/walrus-flippers-marine-mammal-arctic-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn0.iconfinder.com/data/icons/people-jobs-set-2/128/jobs-08-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn0.iconfinder.com/data/icons/people-jobs-set-2/128/jobs-11-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn0.iconfinder.com/data/icons/people-jobs-set-2/128/jobs-06-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn0.iconfinder.com/data/icons/people-jobs-set-2/128/jobs-09-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn4.iconfinder.com/data/icons/animals-137/128/sloth-slow-wildlife-mammal-arboreal-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn4.iconfinder.com/data/icons/animals-137/128/penguin-flightless-bird-antarctica-animal-512.png"
+          />
+          <img
+            onClick={e => this.handleAvatarClick(e)}
+            className="avatars"
+            src="https://cdn4.iconfinder.com/data/icons/animals-137/128/alpaca-llama-wool-livestock-mammal-512.png"
           />
         </div>
       </div>

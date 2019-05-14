@@ -2,7 +2,7 @@
 $themes: (
   musictree: (
     backgroundColor: lighten($bg-grey, 5%),
-    textColor: $off-black,
+    textColor: $accent-orange,
     dashText: $accent-orange,
     textColorOpposite: $off-white,
     hoverColor: $accent-red,
@@ -21,7 +21,7 @@ $themes: (
     themeSelect: #333,
     formLabel: $accent-light-blue,
   ),
-    twilight: (
+    thedarkness: (
     backgroundColor: lighten($off-black, 5%),
     textColor: $dark-text,
     dashText: $dark-text,
@@ -42,7 +42,7 @@ $themes: (
     themeSelect: $dark-text,
     formLabel: #ffd13b,
   ),
-  peacock: (
+  fresh: (
     backgroundColor: $accent-dark-blue,
     textColor: lighten($accent-dark-blue, 35%),
     dashText: lighten($accent-dark-blue, 35%),
@@ -63,7 +63,7 @@ $themes: (
     themeSelect: lighten($accent-dark-blue, 35%),
     formLabel: $accent-purple,
   ),
-  good-vibes: (
+  funky: (
     backgroundColor: $gv-blue,
     textColor: darken($gv-purple, 5%),
     dashText: darken($gv-blue, 10%),

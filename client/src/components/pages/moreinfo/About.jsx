@@ -13,23 +13,88 @@ const About = props => (
 
       <div className="divider" />
 
-      <div className="about-container">
+      {/* <div className="about-container">
         <h2>The App</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae iste quo nulla deleniti earum ratione doloribus quibusdam saepe voluptatum minus, dolore dicta ad amet officia delectus nemo rerum dolor iure?</p>
       </div>
 
-      <div className="divider" />
+      <div className="divider" /> */}
 
       <div className="about-container">
         <h2>Tech that is used</h2>
         <span>
-          YouTube API
           <a
             className="bold link"
             href="https://developers.google.com/youtube/"
             target="_blank"
           >
-            Youtube <i className="fab fa-youtube" />
+            Youtube API <i className="iconify" data-icon="logos:youtube" />
+          </a>
+        </span>
+        <span>
+          <a
+            className="bold link"
+            href="https://developers.google.com/"
+            target="_blank"
+          >
+            Google API{" "}
+            <i className="iconify" data-icon="flat-color-icons:google" />
+          </a>
+        </span>
+        <span>
+          <a
+            className="bold link"
+            href="https://developers.facebook.com"
+            target="_blank"
+          >
+            Facebook API <i className="iconify" data-icon="logos:facebook" />
+          </a>
+        </span>
+        <span>
+          <a className="bold link" href="https://reactjs.org" target="_blank">
+            React <i className="iconify" data-icon="logos:react" />
+          </a>
+        </span>
+        <span>
+          <a className="bold link" href="https://redux.js.org" target="_blank">
+            Redux <i className="iconify" data-icon="logos:redux" />
+          </a>
+        </span>
+        <span>
+          <a
+            className="bold link"
+            href="https://www.mongodb.com"
+            target="_blank"
+          >
+            MongoDB Atlas <i className="iconify" data-icon="logos:mongodb" />
+          </a>
+        </span>
+        <span>
+          <a className="bold link" href="https://nodejs.org" target="_blank">
+            Node JS <i className="iconify" data-icon="fa-brands:node" />
+          </a>
+        </span>
+        <span>
+          <a className="bold link" href="https://sass-lang.com" target="_blank">
+            SASS <i className="iconify" data-icon="logos:sass" />
+          </a>
+        </span>
+        <span>
+          <a
+            className="bold link"
+            href="https://webpack.js.org"
+            target="_blank"
+          >
+            Webpack <i className="iconify" data-icon="logos:webpack" />
+          </a>
+        </span>
+        <span>
+          <a
+            className="bold link"
+            href="https://www.docker.com"
+            target="_blank"
+          >
+            Docker <i className="iconify" data-icon="logos:docker" />
           </a>
         </span>
       </div>

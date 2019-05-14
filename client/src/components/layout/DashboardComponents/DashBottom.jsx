@@ -15,7 +15,10 @@ export default class DashBottom extends Component {
           <a className="social-media" href="#">
             <i className="fab fa-twitter" />
           </a>
-          <a className="social-media" href="#">
+          <a
+            className="social-media"
+            href="https://github.com/JHGarrett/Music-Tree"
+          >
             <i className="fab fa-github" />
           </a>
         </div>

@@ -125,9 +125,9 @@ class Profile extends Component {
             onChange={e => this.handleUpdateTheme(e.target.value)}
           >
             <option value="theme-musictree">MusicTree</option>
-            <option value="theme-twilight">Twilight</option>
-            <option value="theme-peacock">Peacock</option>
-            <option value="theme-good-vibes">Good Vibes</option>
+            <option value="theme-thedarkness">Dark-Mode</option>
+            <option value="theme-fresh">Fresh</option>
+            <option value="theme-funky">Funky</option>
           </select>
         </div>
       </div>
