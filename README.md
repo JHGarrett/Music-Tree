@@ -22,7 +22,7 @@ If you would like to try out features as a "user" without creating an account, e
 username: `musictree`  
 password: `music1234` 
 
-<img src="/client/src/assets/HomeScreen.png">
+<img src="/client/src/assets/homescreen.png">
 
 
 ## Requirements
