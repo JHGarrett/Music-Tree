@@ -17,7 +17,7 @@ Music-Tree is a Full Stack project(MERN) that allows users to search for music v
 
 
 ## Demo
-Demo Site: [Music-Tree](www.music-tree.app)  
+Demo Site: [Music-Tree](https://musictree.herokuapp.com/)  
 If you would like to try out features as a "user" without creating an account, enter the following credentials:  
 username: `musictree`  
 password: `music1234` 
