@@ -138,35 +138,3 @@ module.exports = passport => {
   );
     }
 
-/////////////////////////////////////////////////
-// OLD PASSPORT FACEBOOK CODE
-/////////////////////////////////////////////////
-
-// passport.use(new FacebookStrategy({
-//   // pull in our app id and secret from our auth.js file
-//   clientID: keys.facebookClientID,
-//   clientSecret: keys.facebookClientSecret,
-//   callbackURL: '/routes/auth/facebook/callback'
-// }, (token, refreshToken, profile, done) => {
-//   process.nextTick(() => {
-//     User.findOne({ 'facebook.id': profile.id }, (err, user) => {
-//       if (err)
-//         return done(err);
-//       if (user) {
-//         return done(null, user);
-//       } else {
-//         let newUser = new User();
-//         // set all of the facebook information in our user model
-//         newUser.facebookID = profile.id;
-//         newUser.facebookToken = token;
-//         newUser.displayName = profile.name.givenName + ' ' + profile.name.familyName;
-//         // save our user
-//         newUser.save((err) => {
-//           if (err)
-//             throw err;
-//           return done(null, newUser);
-//         });
-//       }
-//     });
-//   });
-// }));
