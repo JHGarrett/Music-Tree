@@ -12,6 +12,7 @@
 
 ## About
 Music-Tree is a Full Stack project(MERN) that allows users to search for music videos and easily save them to their profile. 
+
 <img src="/client/src/assets/HomeScreen.png">
 
 <img src="/client/src/assets/AboutPage.png">
