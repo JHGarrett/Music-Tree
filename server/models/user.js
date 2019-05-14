@@ -10,8 +10,8 @@ const User = new Schema({
     ref: "ProfilePic"
   },
   googleID: String,
-  // facebookID: String,
-  // facebookToken: String,
+  facebookID: String,
+  facebookToken: String,
   displayName: String,
   email: String,
   location: String,

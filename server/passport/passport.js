@@ -82,7 +82,7 @@ module.exports = passport => {
       {
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
-        callbackURL: "/auth/google/callback" //route the user is going to be send to after he/she authenticate
+        callbackURL: "/routes/auth/google/callback" //route the user is going to be send to after he/she authenticate
       },
       async (accessToken, refreshToken, profile, done) => {
         try {
@@ -107,35 +107,35 @@ module.exports = passport => {
   );
 
   // Facebook Config
-//   passport.use(
-//     new FacebookStrategy(
-//       {
-//         clientID: keys.facebookClientID,
-//         clientSecret: keys.facebookClientSecret,
-//         callbackURL: "/routes/auth/facebook/callback"
-//       },
-//       async (token, refreshToken, profile, done) => {
-//         try {
-//           let user = await User.findOne({ facebookID: profile.id });
-//           if (!user) {
-//             let newUser = new User();
-//             newUser.facebookID = profile.id;
-//             newUser.facebookToken = token;
-//             newUser.username = profile.displayName;
-//             newUser = await newUser.save();
-//             console.log("new facebook user created: ", newUser);
-//             return done(null, newUser);
-//           } else {
-//             console.log("LOGGED IN FACEBOOK ACCOUNT: ", user);
-//             return done(null, user);
-//           }
-//         } catch (err) {
-//           return done(err, null);
-//         }
-//       }
-//     )
-//   );
- };
+  passport.use(
+    new FacebookStrategy(
+      {
+        clientID: keys.facebookClientID,
+        clientSecret: keys.facebookClientSecret,
+        callbackURL: "/routes/auth/facebook/callback"
+      },
+      async (token, refreshToken, profile, done) => {
+        try {
+          let user = await User.findOne({ facebookID: profile.id });
+          if (!user) {
+            let newUser = new User();
+            newUser.facebookID = profile.id;
+            newUser.facebookToken = token;
+            newUser.username = profile.displayName;
+            newUser = await newUser.save();
+            console.log("new facebook user created: ", newUser);
+            return done(null, newUser);
+          } else {
+            console.log("LOGGED IN FACEBOOK ACCOUNT: ", user);
+            return done(null, user);
+          }
+        } catch (err) {
+          return done(err, null);
+        }
+      }
+    )
+  );
+    }
 
 /////////////////////////////////////////////////
 // OLD PASSPORT FACEBOOK CODE
