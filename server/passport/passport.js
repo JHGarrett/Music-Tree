@@ -82,7 +82,7 @@ module.exports = passport => {
       {
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
-        callbackURL: "/auth/google/callback" //route the user is going to be send to after he/she authenticate
+        callbackURL: "/routes/auth/google/callback" //route the user is going to be send to after he/she authenticate
       },
       async (accessToken, refreshToken, profile, done) => {
         try {
