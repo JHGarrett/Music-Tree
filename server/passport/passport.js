@@ -112,7 +112,8 @@ module.exports = passport => {
       {
         clientID: keys.facebookClientID,
         clientSecret: keys.facebookClientSecret,
-        callbackURL: "/routes/auth/facebook/callback"
+        callbackURL:
+          "https://musictree.herokuapp.com/routes/auth/facebook/callback"
       },
       async (token, refreshToken, profile, done) => {
         try {
