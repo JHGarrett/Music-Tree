@@ -13,8 +13,6 @@
 ## About
 Music-Tree is a Full Stack project(MERN) that allows users to search for music videos and easily save them to their profile. 
 
-<img src="/client/src/assets/HomeScreen.png">
-
 <img src="/client/src/assets/AboutPage.png">
 
 
@@ -23,6 +21,9 @@ Demo Site: [Music-Tree](www.music-tree.app)
 If you would like to try out features as a "user" without creating an account, enter the following credentials:  
 username: `musictree`  
 password: `music1234` 
+
+<img src="/client/src/assets/HomeScreen.png">
+
 
 ## Requirements
 * [Node](https://nodejs.org/en/)
