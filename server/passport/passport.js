@@ -82,7 +82,7 @@ module.exports = passport => {
       {
         clientID: keys.googleClientID,
         clientSecret: keys.googleClientSecret,
-        callbackURL: "/routes/auth/google/callback" //route the user is going to be send to after he/she authenticate
+        callbackURL: "/auth/google/callback" //route the user is going to be send to after he/she authenticate
       },
       async (accessToken, refreshToken, profile, done) => {
         try {
@@ -112,8 +112,7 @@ module.exports = passport => {
       {
         clientID: keys.facebookClientID,
         clientSecret: keys.facebookClientSecret,
-        callbackURL:
-          "https://musictree.herokuapp.com/routes/auth/facebook/callback"
+        callbackURL: "/routes/auth/facebook/callback"
       },
       async (token, refreshToken, profile, done) => {
         try {
@@ -136,5 +135,5 @@ module.exports = passport => {
       }
     )
   );
-    }
+ };
 
