@@ -33,7 +33,6 @@ class AppRoutes extends React.Component {
     this.state.launch ? this.setState({ launch: false }) : null;
 
   handleSearchInput = query => {
-    // console.log('this is the search: ', query);
     axios
       .get(`routes/yt/search/${query}`)
       .then(results => {

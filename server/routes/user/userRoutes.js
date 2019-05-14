@@ -122,8 +122,6 @@ router.get("/logout", (req, res) => {
 });
 
 //For testing purposes:
-// router.get('/api/current_user', (req, res)=> {
-//   res.send(req.user); //passport attach functions to the request
-// });
+
 
 module.exports = router;

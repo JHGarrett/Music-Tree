@@ -8,15 +8,15 @@ export default class DashTop extends Component {
         <h2 className="dash-header">Having Fun?</h2>
         <p className="sign-up">
           <NavLink className="dashboard__link" to="/signup">
-            Sign up
+            Why not sign up?
           </NavLink>{" "}
-          These are some of the benefits:
+          Here are some of the benefits:
         </p>
         <ul className="benefits-list">
           <li>- Profile Picture</li>
           <li>- Custom themes</li>
           <li>- Save your liked videos</li>
-          <p className="bold">And much more!</p>
+          <p className="bold">And more!</p>
         </ul>
       </div>
     );

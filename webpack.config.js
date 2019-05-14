@@ -90,17 +90,6 @@ module.exports = {
               }
             }
           }),
-
-          // new webpack.optimize.UglifyJsPlugin({
-          //   sourceMap: true,
-          //   beautify: false,
-          //   comments: false,
-          //   compress: {
-          //     warnings: false,
-          //     drop_console: true,
-          //     screw_ie8: true
-          //   }
-          // }),
           
         ]
       : [new webpack.HotModuleReplacementPlugin()],

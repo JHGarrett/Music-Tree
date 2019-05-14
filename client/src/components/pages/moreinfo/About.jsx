@@ -13,12 +13,7 @@ const About = props => (
 
       <div className="divider" />
 
-      {/* <div className="about-container">
-        <h2>The App</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae iste quo nulla deleniti earum ratione doloribus quibusdam saepe voluptatum minus, dolore dicta ad amet officia delectus nemo rerum dolor iure?</p>
-      </div>
-
-      <div className="divider" /> */}
+     
 
       <div className="about-container">
         <h2>Tech that is used</h2>

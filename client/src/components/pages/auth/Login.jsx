@@ -24,8 +24,6 @@ class Login extends Component {
         <div className="error-popover" id="deleteErrorMessage">
           <div className="popover-arrow" />
           <h3 className="popover-header">
-            {/* Popover Header */}
-            {/* <a className="popover-close" onClick={this.closeErrorMessage}/> */}
           </h3>
           <div className="popover-body">{this.props.errorMessage}</div>
         </div>

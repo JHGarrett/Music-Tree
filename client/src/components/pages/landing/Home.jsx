@@ -6,12 +6,10 @@ class Home extends Component {
   handleSearchInput(e) {
     e.preventDefault();
     const search = e.target.elements.search.value;
-    // this.props.handleSearchInput(search);
     this.props.history.push(`/search/${search}`);
   }
 
   render() {
-    // console.log('from home', this.props);
     return (
       <div
         className={this.props.launch ? "page-wrapper nodash" : "page-wrapper"}

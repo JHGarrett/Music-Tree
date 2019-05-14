@@ -92,7 +92,7 @@ class EditProfile extends Component {
   }
 
   render() {
-    // console.log('this is from edit profile: ', this.props);
+
     const {
       username,
       email,
@@ -167,9 +167,7 @@ class EditProfile extends Component {
               &times;
             </span>
             <h3>
-              Are you sure you want to do this? Deleting your account will
-              permanently erase all user data including: saved preferences,
-              videos, and playlists.
+              Are you sure you want to do this? 
             </h3>
             <button
               className="button profile-button"

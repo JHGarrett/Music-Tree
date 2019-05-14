@@ -33,7 +33,6 @@ export default class Search extends Component {
   }
 
   render() {
-    // console.log('from search: ', this.props);
     const { videos, selectedVideo } = this.props.stateData;
 
     return (

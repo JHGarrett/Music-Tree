@@ -27,7 +27,7 @@ class Profile extends Component {
   }
 
   componentDidUpdate() {
-    // this.props.auth.loggedIn ? this.props.handleShowDash() : this.props.history.push('/');
+    
     this.props.handleShowDash();
   }
 
@@ -58,7 +58,7 @@ class Profile extends Component {
   }
 
   render() {
-    // console.log('this is from profile: ', this.props);
+    
     const { loggedIn, creds } = this.props.auth;
     const { edit, editButton } = this.state.editUser;
 

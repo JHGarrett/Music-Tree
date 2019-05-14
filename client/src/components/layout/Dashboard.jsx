@@ -13,7 +13,6 @@ class Dashboard extends Component {
   }
 
   render() {
-    // console.log('from dashboard: ', this.props);
     const { loggedIn, creds } = this.props.auth;
 
     return (
