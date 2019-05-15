@@ -83,15 +83,6 @@ const About = props => (
             Webpack <i className="iconify" data-icon="logos:webpack" />
           </a>
         </span>
-        <span>
-          <a
-            className="bold link"
-            href="https://www.docker.com"
-            target="_blank"
-          >
-            Docker <i className="iconify" data-icon="logos:docker" />
-          </a>
-        </span>
       </div>
 
       <div className="divider" />
