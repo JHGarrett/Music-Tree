@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const NotFound = () => (
   <div className="not-found page-wrapper nodash">
     <h2>
-      <span>404 Error!</span> Page not found.
+      <span>404 Error!</span> Please enter a valid search.
     </h2>
-    <Link to="/">Go to Homepage</Link>
+    <Link to="/">Go to Homepage and try again.</Link>
   </div>
 );
 
