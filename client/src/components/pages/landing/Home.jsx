@@ -18,7 +18,7 @@ class Home extends Component {
           <h1>Music-Tree is an Ad free youtube player.<br></br> It uses sever-side rendering and a custom DNS to stop them. </h1>
         </div>
         <div className="searchbar-wrapper">
-          <h2>Get Started with your favorite song/artist!</h2>
+          <h2>Please sign up to get access to custom themes, avatars, the ability to like and add videos to a playlist, and more!. <br></br>Get Started with your favorite song/artist below!</h2>
           <form
             className="landing-searchbar"
             onSubmit={this.handleSearchInput.bind(this)}
