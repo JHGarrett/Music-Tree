@@ -19,6 +19,9 @@ class Home extends Component {
         </div>
         <div className="searchbar-wrapper">
           <h2>Please sign up to get access to custom themes, avatars, the ability to like and add videos to a playlist, and more! <br></br>Get Started with your favorite song/artist below!</h2>
+          <h2>If you would like to try out features as a "user" without creating an account, enter the following credentials: <br/>
+username: musictree <br/>
+password: music1234</h2>
           <form
             className="landing-searchbar"
             onSubmit={this.handleSearchInput.bind(this)}
