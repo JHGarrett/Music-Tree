@@ -3,7 +3,7 @@
   margin-top: 2%;
 }
 .searchbar-wrapper {
-  background: image('../../../assets/music-tree.png');
+  background: image('client/src/assets/music-tree.png');
 
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 .landing-searchbar {
   @include themify($themes) {
     border: none;
-    background: image('../../../assets/music-tree.png');
+    background: image('client/src/assets/music-tree.png');
   }
   outline: none;
   height: 40px;
