@@ -45,7 +45,7 @@ class Login extends Component {
           <div>
             <h1>Welcome back!</h1>
             <div className="auth-buttons-wrapper">
-              <form action="routes/auth/google" method="get">
+              {/* <form action="routes/auth/google" method="get">
                 <button className="button google-button">
                   <span className="auth-icon">
                     <i className="fab fa-google-plus-g" />
@@ -60,7 +60,7 @@ class Login extends Component {
                   </span>{" "}
                   Facebook
                 </button>
-              </form>
+              </form> */}
             </div>
             <div className="divider">
               <strong className="divider-title">Or</strong>
