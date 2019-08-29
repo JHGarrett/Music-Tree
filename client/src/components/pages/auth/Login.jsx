@@ -62,9 +62,9 @@ class Login extends Component {
                 </button>
               </form> */}
             </div>
-            <div className="divider">
+            {/* <div className="divider">
               <strong className="divider-title">Or</strong>
-            </div>
+            </div> */}
           </div>
 
           <form className="auth-form" onSubmit={e => this.handleSubmit(e)}>

@@ -50,7 +50,7 @@ class Signup extends Component {
             <h1>Explore the music you love.</h1>
             <h2>Visualize the experience now!</h2>
             <div className="auth-buttons-wrapper">
-              <form action="routes/auth/google" method="get">
+              {/* <form action="routes/auth/google" method="get">
                 <button className="button google-button">
                   <span className="auth-icon">
                     <i className="fab fa-google-plus-g" />
@@ -65,11 +65,11 @@ class Signup extends Component {
                   </span>{" "}
                   Sign up with Facebook
                 </button>
-              </form>
+              </form> */}
             </div>
-            <div className="divider">
+            {/* <div className="divider">
               <strong className="divider-title">Or</strong>
-            </div>
+            </div> */}
           </div>
           <form className="auth-form" onSubmit={e => this.handleSubmit(e)}>
             <input
