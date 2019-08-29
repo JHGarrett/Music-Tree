@@ -15,7 +15,7 @@
 .landing-searchbar {
   @include themify($themes) {
     border: none;
-    background: url(../../../assets/music-tree.png);
+    background: image('../../../assets/music-tree.png');
   }
   outline: none;
   height: 40px;

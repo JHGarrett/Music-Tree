@@ -1,27 +1,28 @@
-@import "./setup/variables";
-@import "./setup/themes";
-@import "./setup/base";
+@import './setup/variables';
+@import './setup/themes';
+@import './setup/base';
 
 // Shared components
-@import "./layout/navbar";
-@import "./layout/footer";
-@import "./layout/dashboard";
+@import './layout/navbar';
+@import './layout/footer';
+@import './layout/dashboard';
 
 // Initial landing/postlanding
-@import "./pages/landing/landing";
-@import "./pages/landing/postlanding";
-@import "./pages/landing/playvideo";
+@import './pages/landing/landing';
+@import './pages/landing/postlanding';
+@import './pages/landing/playvideo';
 
 // Authentication
-@import "./pages/auth/login";
-@import "./pages/auth/signup";
-@import "./pages/auth/auth";
+@import './pages/auth/login';
+@import './pages/auth/signup';
+@import './pages/auth/auth';
 
 // General Pages
-@import "./pages/mainpage";
-@import "./pages/about";
+@import './pages/mainpage';
+@import './pages/about';
 
 // Profile
-@import "./pages/user/profile";
-@import "./pages/user/playlist";
-@import "./pages/user/savedvideos";
+@import './pages/user/profile';
+@import './pages/user/playlist';
+@import './pages/user/savedvideos';
+
