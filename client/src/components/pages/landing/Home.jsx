@@ -15,7 +15,7 @@ class Home extends Component {
         className={this.props.launch ? "page-wrapper nodash" : "page-wrapper"}
       >
         <div className="landing-page-title">
-          <h1>Discover new songs and artists based on your interests!</h1>
+          <h1>Music-Tree is an Ad free youtube player.<br></br> It uses sever-side rendering and a custom DNS to stop them. </h1>
         </div>
         <div className="searchbar-wrapper">
           <h2>Get Started with your favorite song/artist!</h2>
