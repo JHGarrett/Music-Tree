@@ -3,6 +3,8 @@
   margin-top: 2%;
 }
 .searchbar-wrapper {
+  background: image('client/src/assets/music-tree.png');
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +16,7 @@
 .landing-searchbar {
   @include themify($themes) {
     border: none;
-    background: themed('backgroundColor');
+    background: image('client/src/assets/music-tree.png');
   }
   outline: none;
   height: 40px;
@@ -29,6 +31,7 @@
     border: none;
     border-bottom: 1px solid themed('input');
     background: themed('backgroundColor');
+    background-image: image();
   }
   width: 100%;
   height: 100%;
@@ -44,7 +47,7 @@
   }
 
   font-size: 1.5em;
-  padding-left: .5em;
+  padding-left: 0.5em;
   border: none;
   outline: none;
   cursor: pointer;
@@ -59,14 +62,13 @@
 }
 
 @media screen and (min-width: 950px) and (max-width: 1360px) {
-
   .searchbar-wrapper {
-  width: 75%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 949px) {
   .searchbar-wrapper {
-  width: 100%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
