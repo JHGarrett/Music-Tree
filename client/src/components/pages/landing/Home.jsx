@@ -26,7 +26,7 @@ class Home extends Component {
             with your favorite song/artist below!
           </h2>
           <h3>
-            ***If you would like to try out features as a "user" without creating
+            *** If you would like to try out features as a "user" without creating
             an account, enter the following credentials: <br />
             username: musictree <br />
             password: music1234 <br/>
