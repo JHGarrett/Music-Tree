@@ -35,6 +35,12 @@ password: `music1234`
 * Express
 * React, React Router & Redux
 * NodeJS
+* SASS, SCSS
+* Webpack
+* Youtube API
+* Passport JS
+* Axios
+* Uglify JS
 
 ## License
 This project was created by [John Garrett](https://github.com/JHGarrett).    
