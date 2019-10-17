@@ -15,6 +15,17 @@ Music-Tree is a Full Stack project(MERN) that allows users to search for music v
 
 <img src="/client/src/assets/AboutPage.png">
 
+## Advantage of Signing In
+When a user signs up they have additional features like themes, avatars and the ability to like and save videos. 
+
+<img src="/client/src/assets/signup1.png">
+
+<img src="/client/src/assets/signup2.png">
+
+<img src="/client/src/assets/signup3.png">
+
+
+
 
 ## Demo
 Demo Site: [Music-Tree](https://musictree.herokuapp.com/)  
