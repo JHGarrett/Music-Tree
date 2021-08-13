@@ -11,7 +11,7 @@
     "watch": "nodemon server/server.js",
     "build:dev": "webpack",
     "build:prod": "cross-env NODE_ENV=production webpack -p",
-    "heroku-postbuild": "npm run build:prod"
+    "heroku-postbuild": "npm install && npm run build:prod"
   },
   "proxy": "http://localhost:8000/",
   "repository": {
